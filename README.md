@@ -5,7 +5,6 @@ This is a basic React app which includes some AtlasKit components. You can use t
 ## Getting started
 
 ```bash
-npm install skatejs@4.0.7
-npm install
+yarn # if you don't have yarn, install with: npm install -g yarn
 npm run dev
 ```
