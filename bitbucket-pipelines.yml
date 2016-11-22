@@ -1,4 +1,4 @@
-image: node:4.6.0
+image: node:6
 
 pipelines:
   default:
@@ -6,4 +6,4 @@ pipelines:
         script:
           - npm install -g yarn
           - yarn
-          - `npm bin`/webpack
+          - node_modules/.bin/webpack
