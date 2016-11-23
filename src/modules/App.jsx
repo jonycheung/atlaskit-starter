@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react';
 import PageComponent from 'ak-page';
 import Navigation, { NavigationLink } from 'ak-navigation';
+import { Link } from 'react-router';
+
 import AtlassianIconWC from 'ak-icon/glyph/atlassian';
 import GearIconWC from 'ak-icon/glyph/bitbucket/admin';
 import DashboardIconWC from 'ak-icon/glyph/bitbucket/dashboard';
 import PullRequestsIconWC from 'ak-icon/glyph/bitbucket/pullrequests';
 import 'ak-css-reset';
-
-import CupcakeIpsum from './CupcakeIpsum.jsx';
 
 // Here we convert our skatejs web components into React components using 'reactify'
 // In a few weeks these components will all be native React components so we will be
@@ -24,7 +24,7 @@ const PullRequestsIcon = reactify(PullRequestsIconWC, {});
 export default class App extends PureComponent {
   render() {
     return (
-      <Page>
+      <Page layout="fixed">
         <Nav
           open
           containerName="My app"
@@ -35,27 +35,23 @@ export default class App extends PureComponent {
           slot="navigation"
         >
           <AtlassianIcon slot="global-home" />
-          <NavLink selected>
+          <NavLink href="/" selected>
             <DashboardIcon slot="icon" />
-            Dashboard
+            <Link to="/">Dashboard</Link>
           </NavLink>
-          <NavLink href="http://atlassian.design" >
+          <NavLink href="/pull-requests" >
             <PullRequestsIcon slot="icon" />
-            Pull requests
+            <Link to="/pull-requests">Pull requests</Link>
           </NavLink>
-          <NavLink>
+          <NavLink href="/settings">
             <GearIcon slot="icon" />
-            Settings
+            <Link to="/settings">Settings</Link>
           </NavLink>
         </Nav>
 
-        <h1>My awesome app</h1>
-
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
+        <div>
+          {this.props.children}
+        </div>
 
       </Page>
     );

@@ -19,6 +19,7 @@
     "akutil-react": "^3.0.1",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
+    "react-router": "^3.0.0",
     "skatejs": "4.0.7",
     "skatejs-react-integration": "^2.0.3"
   },
