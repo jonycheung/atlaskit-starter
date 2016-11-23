@@ -20,8 +20,7 @@
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "skatejs": "4.0.7",
-    "skatejs-react-integration": "^2.0.3",
-    "skatejs-web-components": "^5.0.0"
+    "skatejs-react-integration": "^2.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",

@@ -2,18 +2,6 @@
 # yarn lockfile v1
 
 
-"@webcomponents/custom-elements@https://github.com/webcomponents/custom-elements/archive/fc022e8.tar.gz":
-  version "1.0.0-alpha.3"
-  resolved "https://github.com/webcomponents/custom-elements/archive/fc022e8.tar.gz#f3411042f7301f1ce0b3061c5bb80dcb369be7cc"
-
-"@webcomponents/shadycss@https://github.com/webcomponents/shadycss/archive/19a46c9.tar.gz":
-  version "0.0.1"
-  resolved "https://github.com/webcomponents/shadycss/archive/19a46c9.tar.gz#c4614f09d107128e4945a3f7222ad8d1354c5994"
-
-"@webcomponents/shadydom@https://github.com/webcomponents/shadydom/archive/c162774.tar.gz":
-  version "0.0.1"
-  resolved "https://github.com/webcomponents/shadydom/archive/c162774.tar.gz#a59595b55b0a3422cdad1c428533feedbb99b802"
-
 Base64@~0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/Base64/-/Base64-0.2.1.tgz#ba3a4230708e186705065e66babdd4c35cf60028"
@@ -3405,14 +3393,6 @@ skatejs-react-integration@^2.0.2, skatejs-react-integration@^2.0.3:
   dependencies:
     object-assign "^4.1.0"
     pascal-case "^2.0.0"
-
-skatejs-web-components@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/skatejs-web-components/-/skatejs-web-components-5.0.0.tgz#c350ec9614d88cc1331602f4827ecc7210d3286d"
-  dependencies:
-    "@webcomponents/custom-elements" "https://github.com/webcomponents/custom-elements/archive/fc022e8.tar.gz"
-    "@webcomponents/shadycss" "https://github.com/webcomponents/shadycss/archive/19a46c9.tar.gz"
-    "@webcomponents/shadydom" "https://github.com/webcomponents/shadydom/archive/c162774.tar.gz"
 
 skatejs@4.0.7, skatejs@^4.0.6:
   version "4.0.7"
