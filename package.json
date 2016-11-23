@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/entry.jsx",
   "scripts": {
-    "dev": "webpack-dev-server --content-base static",
+    "dev": "webpack-dev-server --content-base static --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack"
   },

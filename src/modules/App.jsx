@@ -1,17 +1,25 @@
 import React, { PureComponent } from 'react';
 import PageComponent from 'ak-page';
 import Navigation, { NavigationLink } from 'ak-navigation';
-import AtlassianIcon from 'ak-icon/glyph/atlassian';
+import AtlassianIconWC from 'ak-icon/glyph/atlassian';
+import GearIconWC from 'ak-icon/glyph/bitbucket/admin';
+import DashboardIconWC from 'ak-icon/glyph/bitbucket/dashboard';
+import PullRequestsIconWC from 'ak-icon/glyph/bitbucket/pullrequests';
 import 'ak-css-reset';
 
 import CupcakeIpsum from './CupcakeIpsum.jsx';
 
 // Here we convert our skatejs web components into React components using 'reactify'
+// In a few weeks these components will all be native React components so we will be
+// able to get rid of these 'reactify' calls.
 import reactify from 'skatejs-react-integration'; // eslint-disable-line
 const Page = reactify(PageComponent, {});
 const Nav = reactify(Navigation, {});
 const NavLink = reactify(NavigationLink, {});
-const CharlieIcon = reactify(AtlassianIcon, {});
+const AtlassianIcon = reactify(AtlassianIconWC, {});
+const GearIcon = reactify(GearIconWC, {});
+const DashboardIcon = reactify(DashboardIconWC, {});
+const PullRequestsIcon = reactify(PullRequestsIconWC, {});
 
 export default class App extends PureComponent {
   render() {
@@ -19,22 +27,25 @@ export default class App extends PureComponent {
       <Page>
         <Nav
           open
-          container-name="Nucleus"
-          container-href="http://example.com"
-          container-logo="http://example.com/img.jpg"
-          product-href="http://atlassian.design"
+          containerName="My app"
+          containerHref="http://example.com"
+          containerLogo="nucleus.png"
+          productHref="http://atlassian.design"
           collapsible
           slot="navigation"
         >
-          <CharlieIcon slot="global-home" />
+          <AtlassianIcon slot="global-home" />
           <NavLink selected>
-            Welcome
+            <DashboardIcon slot="icon" />
+            Dashboard
           </NavLink>
           <NavLink href="http://atlassian.design" >
-            Page two
+            <PullRequestsIcon slot="icon" />
+            Pull requests
           </NavLink>
           <NavLink>
-            Page three
+            <GearIcon slot="icon" />
+            Settings
           </NavLink>
         </Nav>
 
