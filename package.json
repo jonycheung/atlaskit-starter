@@ -2,10 +2,11 @@
   "name": "atlaskit-starter",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/entry.jsx",
   "scripts": {
     "dev": "webpack-dev-server --content-base static",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
   },
   "keywords": [],
   "author": "",

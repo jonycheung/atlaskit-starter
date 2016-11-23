@@ -6,4 +6,4 @@ pipelines:
         script:
           - npm install -g yarn
           - yarn
-          - node_modules/.bin/webpack
+          - npm run webpack
