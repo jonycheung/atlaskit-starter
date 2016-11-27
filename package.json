@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ak-css-reset": "^1.1.0",
-    "ak-icon": "^10.1.0",
-    "ak-navigation": "^13.0.3",
+    "ak-css-reset": "^1.3.0",
+    "ak-icon": "^11.0.1",
+    "ak-navigation": "^14.0.0",
     "ak-page": "^7.0.4",
     "akutil-react": "^3.0.1",
     "react": "^15.4.0",
