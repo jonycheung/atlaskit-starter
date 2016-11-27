@@ -4,16 +4,16 @@ import { Link } from 'react-router';
 
 import {
   AtlassianIcon,
-  BitbucketAdminIcon as GearIcon,
   BitbucketDashboardIcon as DashboardIcon,
   BitbucketPullrequestsIcon as PullRequestsIcon,
+  BitbucketAdminIcon as GearIcon,
 } from 'ak-icon';
 import 'ak-css-reset';
 
 const myLinks = [
-  ['/', 'Home'],
-  ['/pull-requests', 'Pull requests'],
-  ['/settings', 'Settings'],
+  ['/', 'Home', DashboardIcon],
+  ['/pull-requests', 'Pull requests', PullRequestsIcon],
+  ['/settings', 'Settings', GearIcon],
 ];
 
 export default class App extends PureComponent {
@@ -38,14 +38,17 @@ export default class App extends PureComponent {
           }
         >
           {
-            myLinks.map(link => (
-              <Link to={link[0]}>
-                <AkContainerItem
-                  icon={<img src="nucleus.png" alt="icon" />}
-                  text={link[1]}
-                />
-              </Link>
-            ))
+            myLinks.map(link => {
+              const [url, title, Icon] = link;
+              return (
+                <Link key={url} to={url}>
+                  <AkContainerItem
+                    icon={<Icon label={title} />}
+                    text={title}
+                  />
+                </Link>
+              );
+            })
           }
         </Nav>
 
