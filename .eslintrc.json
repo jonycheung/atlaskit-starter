@@ -1,19 +1,7 @@
 {
-  "extends": "airbnb",
-  "env": {
-    "es6": true,
-    "node": true,
-    "mocha": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "impliedStrict": true
-    }
-  },
-  "globals": {
-    "logger": true
-  },
+  "extends": "react-app",
   "rules": {
+    "indent": ["warn", 2],
+    "react/jsx-indent": ["warn", 2]
   }
 }
