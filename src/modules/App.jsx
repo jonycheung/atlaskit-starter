@@ -3,7 +3,7 @@ import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigat
 import { Link } from 'react-router';
 
 import {
-  AtlassianIcon,
+  // AtlassianIcon, // TODO add to <Nav> once prop exposed
   BitbucketDashboardIcon as DashboardIcon,
   BitbucketPullrequestsIcon as PullRequestsIcon,
   BitbucketAdminIcon as GearIcon,
