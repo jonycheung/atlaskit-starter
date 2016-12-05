@@ -78,9 +78,9 @@ ak-blanket@^4.0.0:
     classnames "^2.2.5"
     skatejs "^4.0.6"
 
-ak-button@^4.1.4:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-4.1.4.tgz#b30b17f623e1a12085d266f9d273ea6031d105c2"
+ak-button@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.0.0.tgz#3609952e61971caf10f4b905ec5e571d7dc69bea"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
@@ -92,9 +92,9 @@ ak-css-reset@^1.3.0:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^11.1.6:
-  version "11.1.6"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.1.6.tgz#c62748d97d565be77349df2fa23105c2c46da7ae"
+ak-icon@^11.2.0:
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.2.0.tgz#25a217b1475de38b11d48d187f3e0630e58c7600"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
