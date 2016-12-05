@@ -11,9 +11,12 @@ export default class HomePage extends PureComponent {
     }
   }
 
-  // This doesn't fire are the moment, need to update ak-button
-  showModal() {
+  showModal = () => {
     this.setState({ isOpen: true });
+  }
+
+  hideModal = () => {
+    this.setState({ isOpen: false });
   }
 
   render() {
@@ -28,7 +31,7 @@ export default class HomePage extends PureComponent {
         <p>
           <Button
             appearance="primary"
-            onClick={this.showModal.bind(this)}
+            onClick={this.showModal}
           >Click for cupcakes</Button>
         </p>
 
@@ -37,9 +40,10 @@ export default class HomePage extends PureComponent {
             <h2>Candy bar</h2>
           }
           footer={
-            <Button appearance="subtle">Exit candy bar</Button>
+            <Button appearance="subtle" onClick={this.hideModal}>Exit candy bar</Button>
           }
           isOpen={this.state.isOpen}
+          onBlanketClicked={this.hideModal}
         >
           <p style={{ textAlign: 'center' }}>
             <img src="http://i.giphy.com/yidUztgRB2w2gtDwL6.gif" alt="Moar cupcakes" />

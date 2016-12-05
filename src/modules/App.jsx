@@ -3,7 +3,7 @@ import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigat
 import { Link } from 'react-router';
 
 import {
-  // AtlassianIcon, // TODO add to <Nav> once prop exposed
+  AtlassianIcon,
   BitbucketDashboardIcon as DashboardIcon,
   BitbucketPullrequestsIcon as PullRequestsIcon,
   BitbucketAdminIcon as GearIcon,
@@ -36,6 +36,7 @@ export default class App extends PureComponent {
               />
             </Link>
           }
+          globalPrimaryIcon={<AtlassianIcon />}
         >
           {
             myLinks.map(link => {
