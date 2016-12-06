@@ -92,9 +92,9 @@ ak-css-reset@^1.3.0:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^11.2.0:
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.2.0.tgz#25a217b1475de38b11d48d187f3e0630e58c7600"
+ak-icon@^11.2.2:
+  version "11.2.2"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.2.2.tgz#33572f7ecbeed31bce1eb75d1cfccaa3ade053e8"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
@@ -108,9 +108,9 @@ ak-modal-dialog@^1.2.0:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^15.4.0:
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-15.4.0.tgz#042ad13b41db4efcbf82be7a2abfa789e814294a"
+ak-navigation@^15.4.2:
+  version "15.4.2"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-15.4.2.tgz#67fa3ead5f3bf6776079670002fca4c2c05a05db"
   dependencies:
     ak-blanket "^4.0.0"
     akutil-common "^5.0.0"
