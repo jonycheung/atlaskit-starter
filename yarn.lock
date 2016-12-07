@@ -78,9 +78,9 @@ ak-blanket@^4.0.0:
     classnames "^2.2.5"
     skatejs "^4.0.6"
 
-ak-button@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.0.0.tgz#3609952e61971caf10f4b905ec5e571d7dc69bea"
+ak-button@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.0.1.tgz#89df809266d91e0b1dc88316895864db41f1d569"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
@@ -92,9 +92,9 @@ ak-css-reset@^1.3.0:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^11.2.2:
-  version "11.2.2"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.2.2.tgz#33572f7ecbeed31bce1eb75d1cfccaa3ade053e8"
+ak-icon@^11.2.4:
+  version "11.2.4"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.2.4.tgz#b5da10fa21f8f5dd719115c25779a47476254907"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
@@ -108,9 +108,9 @@ ak-modal-dialog@^1.2.0:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^15.4.2:
-  version "15.4.2"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-15.4.2.tgz#67fa3ead5f3bf6776079670002fca4c2c05a05db"
+ak-navigation@^15.5.0:
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-15.5.0.tgz#03de4c366e2746a71f02e6e1d23c2ee5cd81ae60"
   dependencies:
     ak-blanket "^4.0.0"
     akutil-common "^5.0.0"

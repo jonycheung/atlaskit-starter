@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, PropTypes } from 'react';
 import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigation';
 import { Link } from 'react-router';
 
@@ -17,6 +17,10 @@ const myLinks = [
 ];
 
 export default class App extends PureComponent {
+  static contextTypes = {
+    router: PropTypes.object,
+  }
+
   render() {
     return (
       <div
@@ -46,6 +50,7 @@ export default class App extends PureComponent {
                   <AkContainerItem
                     icon={<Icon label={title} />}
                     text={title}
+                    isSelected={this.context.router.isActive(url, true)}
                   />
                 </Link>
               );
