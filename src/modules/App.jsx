@@ -1,7 +1,7 @@
 import React, { PureComponent, PropTypes } from 'react';
 import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigation';
 import { Link } from 'react-router';
-
+import { akGridSize } from 'akutil-shared-styles';
 import {
   AtlassianIcon,
   BitbucketDashboardIcon as DashboardIcon,
@@ -9,6 +9,10 @@ import {
   BitbucketAdminIcon as GearIcon,
 } from 'ak-icon';
 import 'ak-css-reset';
+
+// Would like to use a LESS file to import styles here,
+// but create-react-app doesn't support it.
+const gridSizeInt = parseInt(akGridSize, 10);
 
 const myLinks = [
   ['/', 'Home', DashboardIcon],
@@ -40,7 +44,7 @@ export default class App extends PureComponent {
               />
             </Link>
           }
-          globalPrimaryIcon={<AtlassianIcon />}
+          globalPrimaryIcon={<AtlassianIcon label="Atlassian" />}
         >
           {
             myLinks.map(link => {
@@ -58,7 +62,7 @@ export default class App extends PureComponent {
           }
         </Nav>
 
-        <div style={{ margin: '32px 64px' }}>
+        <div style={{ margin: `${4 * gridSizeInt}px ${8 * gridSizeInt}px` }}>
           {this.props.children}
         </div>
 
