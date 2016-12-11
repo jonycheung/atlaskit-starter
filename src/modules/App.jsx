@@ -2,6 +2,7 @@ import React, { PureComponent, PropTypes } from 'react';
 import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigation';
 import { Link } from 'react-router';
 import { akGridSize } from 'akutil-shared-styles';
+import nucleusImage from '../../public/nucleus.png';
 import {
   AtlassianIcon,
   BitbucketDashboardIcon as DashboardIcon,
@@ -39,12 +40,19 @@ export default class App extends PureComponent {
           containerHeader={
             <Link to="/">
               <NavHeader
-                text={'AtlasCat'}
-                icon={<img alt="nucleus" src="nucleus.png" />}
+                text="AtlasCat"
+                icon={
+                  <img alt="nucleus" src={nucleusImage} />
+                }
               />
             </Link>
           }
-          globalPrimaryIcon={<AtlassianIcon label="Atlassian" />}
+          globalPrimaryIcon={
+            <AtlassianIcon
+              label="Atlassian"
+              size="medium"
+            />
+          }
         >
           {
             myLinks.map(link => {
