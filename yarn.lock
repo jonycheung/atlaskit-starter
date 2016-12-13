@@ -64,15 +64,13 @@ ajv@^4.7.0:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-ak-blanket@^4.0.0:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ak-blanket/-/ak-blanket-4.0.2.tgz#bef45cd1e81bad77ab1920964a95c9af1efa5c55"
+ak-blanket@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/ak-blanket/-/ak-blanket-6.0.1.tgz#6401069172d2205f1e1aed51b33f80b8aba9c6e0"
   dependencies:
-    akutil-common "^5.0.0"
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
-    skatejs "^4.0.6"
 
 ak-button@^5.0.2:
   version "5.0.2"
@@ -88,27 +86,28 @@ ak-css-reset@^1.3.0:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^11.4.0:
-  version "11.4.0"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.4.0.tgz#57b10918050a7828931b5f97846eaa211b999641"
+ak-icon@^11.4.2:
+  version "11.4.2"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.4.2.tgz#99f5288c2b62dfb87af04111d2adc67fb738e85d"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
     create-error "^0.3.1"
 
-ak-modal-dialog@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-1.2.0.tgz#88c84bdd1a7776f8a3d2afb588cc98ac0b824b93"
+ak-modal-dialog@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-1.2.1.tgz#8abd29f4755925e39f003dd1023c934bf83b4201"
   dependencies:
+    ak-blanket "^6.0.1"
     akutil-shared-styles "^37.0.3"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-16.0.0.tgz#d68b2bbbe61221ff9c319ece966951c24e84d819"
+ak-navigation@^16.1.0:
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-16.1.0.tgz#76c35c97aad8dc8e851090486a933dfc7da02d2c"
   dependencies:
-    ak-blanket "^4.0.0"
+    ak-blanket "^6.0.1"
     akutil-common "^5.0.0"
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
@@ -2590,10 +2589,6 @@ imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
 
-incremental-dom@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/incremental-dom/-/incremental-dom-0.4.1.tgz#80eb151969bd52054dc29a4720c4e89abd103401"
-
 indexes-of@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
@@ -4726,13 +4721,6 @@ signal-exit@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.1.tgz#5a4c884992b63a7acd9badb7894c3ee9cfccad81"
 
-skatejs@^4.0.6:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/skatejs/-/skatejs-4.1.1.tgz#6516eb284fc768bfa1ca43bb127ead72a7f2e0a6"
-  dependencies:
-    incremental-dom "0.4.1"
-    window-or-global "1.0.1"
-
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -4782,11 +4770,11 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
-source-list-map@^0.1.4, source-list-map@~0.1.0:
+source-list-map@^0.1.4:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-0.1.6.tgz#e1e6f94f0b40c4d28dcf8f5b8766e0e45636877f"
 
-source-list-map@~0.1.7:
+source-list-map@~0.1.0, source-list-map@~0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-0.1.7.tgz#d4b5ce2a46535c72c7e8527c71a77d250618172e"
 
@@ -5352,10 +5340,6 @@ wide-align@^1.1.0:
   resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.0.tgz#40edde802a71fea1f070da3e62dcda2e7add96ad"
   dependencies:
     string-width "^1.0.1"
-
-window-or-global@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/window-or-global/-/window-or-global-1.0.1.tgz#dbe45ba2a291aabc56d62cf66c45b7fa322946de"
 
 window-size@0.1.0:
   version "0.1.0"

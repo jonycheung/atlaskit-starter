@@ -15,9 +15,9 @@
   "dependencies": {
     "ak-button": "^5.0.2",
     "ak-css-reset": "^1.3.0",
-    "ak-icon": "^11.4.0",
-    "ak-modal-dialog": "^1.2.0",
-    "ak-navigation": "^16.0.0",
+    "ak-icon": "^11.4.2",
+    "ak-modal-dialog": "^1.2.1",
+    "ak-navigation": "^16.1.0",
     "akutil-shared-styles": "^37.2.0",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
