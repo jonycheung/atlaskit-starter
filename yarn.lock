@@ -2,18 +2,6 @@
 # yarn lockfile v1
 
 
-"@types/classnames@0.0.31":
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-0.0.31.tgz#05372b801af9e33fd112e93b6df7632aa56f0637"
-
-"@types/lodash@4.*":
-  version "4.14.41"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.41.tgz#6f65b0453778d482dc11fc11601c5c7bc98f04d0"
-
-"@types/react@0.14.*":
-  version "0.14.52"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.52.tgz#3bdfe5c9fe7aca2c6600ee1b0363f4b7acc69c93"
-
 abab@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -72,9 +60,9 @@ ak-blanket@^6.0.1:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-button@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.0.2.tgz#a19ee0fe17c8e5262c0343d5da25e1047319e73e"
+ak-button@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.0.3.tgz#ac0e3915d7b42c96733c5a7404a427ca2925c6c1"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
@@ -86,9 +74,9 @@ ak-css-reset@^1.3.0:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^11.4.2:
-  version "11.4.2"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.4.2.tgz#99f5288c2b62dfb87af04111d2adc67fb738e85d"
+ak-icon@^11.6.0:
+  version "11.6.0"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-11.6.0.tgz#8586a107d74bd2dbd24cb9c519ee460d108b0a99"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
@@ -103,9 +91,9 @@ ak-modal-dialog@^1.2.1:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^16.1.0:
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-16.1.0.tgz#76c35c97aad8dc8e851090486a933dfc7da02d2c"
+ak-navigation@^16.2.2:
+  version "16.2.2"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-16.2.2.tgz#1c4c425e454e7a2a65a4c761deb26aa25c8292f5"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-common "^5.0.0"
@@ -113,7 +101,6 @@ ak-navigation@^16.1.0:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
     keycode "^2.1.2"
-    react-container-query "^0.7.0"
 
 akutil-common@^5.0.0:
   version "5.0.1"
@@ -123,9 +110,9 @@ akutil-common@^5.0.0:
     create-error "^0.3.1"
     keycode "^2.1.2"
 
-akutil-shared-styles@^37.0.0, akutil-shared-styles@^37.0.3, akutil-shared-styles@^37.1.0, akutil-shared-styles@^37.2.0:
-  version "37.2.0"
-  resolved "https://registry.yarnpkg.com/akutil-shared-styles/-/akutil-shared-styles-37.2.0.tgz#56540cda33899757ed7941e534a121ac4952d4ac"
+akutil-shared-styles@^37.0.0, akutil-shared-styles@^37.0.3, akutil-shared-styles@^37.1.0, akutil-shared-styles@^37.3.0:
+  version "37.3.0"
+  resolved "https://registry.yarnpkg.com/akutil-shared-styles/-/akutil-shared-styles-37.3.0.tgz#4c60e913c60bc3ea0b032a5e176f7431d2bcc247"
   dependencies:
     babel-runtime "^6.11.6"
 
@@ -1006,10 +993,6 @@ base64-js@^1.0.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.2.0.tgz#a39992d723584811982be5e290bb6a53d86700f1"
 
-batch-processor@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/batch-processor/-/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
-
 batch@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.5.3.tgz#3f3414f380321743bfc1042f9a83ff1d5824d464"
@@ -1211,7 +1194,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@2.*, classnames@^2.2.5:
+classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1387,13 +1370,6 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
 constants-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
-
-container-query-toolkit@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/container-query-toolkit/-/container-query-toolkit-0.0.2.tgz#76ca4839b2fcbb830dbc579ae54082ae470c806e"
-  dependencies:
-    element-resize-detector "1.1.9"
-    lodash "4.16.4"
 
 contains-path@^0.1.0:
   version "0.1.0"
@@ -1735,12 +1711,6 @@ ecc-jsbn@~0.1.1:
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
-
-element-resize-detector@1.1.9:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/element-resize-detector/-/element-resize-detector-1.1.9.tgz#2304f5753165625eed17a7e953e25687e3b1d322"
-  dependencies:
-    batch-processor "^1.0.0"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -3358,13 +3328,9 @@ lodash.pickby@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.pickby/-/lodash.pickby-4.6.0.tgz#7dea21d8c18d7703a27c704c15d3b84a67e33aff"
 
-lodash@4.*, "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.15.0, lodash@^4.16.2, lodash@^4.16.4, lodash@^4.2.0, lodash@^4.3.0:
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.15.0, lodash@^4.16.2, lodash@^4.16.4, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
-
-lodash@4.16.4:
-  version "4.16.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.4.tgz#01ce306b9bad1319f2a5528674f88297aeb70127"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -4262,18 +4228,6 @@ rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~1.0.4"
 
-react-container-query@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/react-container-query/-/react-container-query-0.7.0.tgz#89559145db5abf69fd62c851f7cfea4c66973836"
-  dependencies:
-    "@types/classnames" "0.0.31"
-    "@types/lodash" "4.*"
-    "@types/react" "0.14.*"
-    classnames "2.*"
-    container-query-toolkit "0.0.2"
-    lodash "4.*"
-    resize-observer-lite "0.0.1"
-
 react-dev-utils@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-0.4.2.tgz#ba6fae581fe945a2fc402e9b27c71fda4f62f6a1"
@@ -4579,12 +4533,6 @@ require-uncached@^1.0.2:
 requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
-
-resize-observer-lite@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/resize-observer-lite/-/resize-observer-lite-0.0.1.tgz#17b3686e8286a5997d53251dc794c0e0caf8d226"
-  dependencies:
-    element-resize-detector "1.1.9"
 
 resolve-from@^1.0.0:
   version "1.0.1"
