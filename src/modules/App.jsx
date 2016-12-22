@@ -1,5 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
-import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigation';
+import Nav, { AkContainerItem, AkContainerHeader as NavHeader, AkGlobalItem } from 'ak-navigation';
 import { Link } from 'react-router';
 import { akGridSize } from 'akutil-shared-styles';
 import nucleusImage from '../../public/nucleus.png';
@@ -35,7 +35,10 @@ export default class App extends PureComponent {
           overflowY: 'auto',
         }}
       >
-        <style>{'body { margin: 0 }'}</style>
+        <style>{`
+            body { margin: 0 }
+            section { margin-top: ${gridSizeInt * 3}px; }
+        `}</style>
         <Nav
           containerHeader={
             <Link to="/">
@@ -47,11 +50,12 @@ export default class App extends PureComponent {
               />
             </Link>
           }
-          globalPrimaryIcon={
-            <AtlassianIcon
-              label="Atlassian"
-              size="medium"
-            />
+          globalPrimaryItem={
+            <AkGlobalItem size="large">
+              <Link to="/" style={{ color: 'white' }}>
+                <AtlassianIcon size="medium" label="Atlassian" />
+              </Link>
+            </AkGlobalItem>
           }
         >
           {

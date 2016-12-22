@@ -23,11 +23,7 @@ export default class HomePage extends PureComponent {
     return (
       <div>
         <h1>My awesome app</h1>
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
+        <CupcakeIpsum paragraphs={5} />
         <p>
           <Button
             appearance="primary"

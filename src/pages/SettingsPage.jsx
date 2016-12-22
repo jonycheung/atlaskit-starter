@@ -6,11 +6,7 @@ export default class HomePage extends PureComponent {
     return (
       <div>
         <h1>My awesome settings</h1>
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
+        <CupcakeIpsum paragraphs={5} />
       </div>
     );
   }

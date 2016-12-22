@@ -6,11 +6,7 @@ export default class PullRequestsPage extends PureComponent {
     return (
       <div>
         <h1>My awesome PRs</h1>
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
-        <CupcakeIpsum />
+        <CupcakeIpsum paragraphs={5} />
       </div>
     );
   }
