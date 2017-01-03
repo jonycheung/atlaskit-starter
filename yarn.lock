@@ -60,9 +60,9 @@ ak-blanket@^6.0.1:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-button@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.1.0.tgz#43d26f58f46d22f0d2cd9a6f60af4594c05a51a1"
+ak-button@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.1.3.tgz#8009da2ac84538285f5978828adca6b849c91e24"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
@@ -74,26 +74,26 @@ ak-css-reset@^1.3.0:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^12.0.1:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-12.0.1.tgz#d8fbf13abcb9d84b4b8f34a64cac9d8c771525b5"
+ak-icon@^12.1.3:
+  version "12.1.3"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-12.1.3.tgz#91a16f197175e91587f8b69f765db0da293e83e9"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
     create-error "^0.3.1"
 
-ak-modal-dialog@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-1.2.1.tgz#8abd29f4755925e39f003dd1023c934bf83b4201"
+ak-modal-dialog@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-1.2.2.tgz#51b0c7ba6c780944564fc8821bcf2a32378019d5"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-shared-styles "^37.0.3"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^17.1.0:
-  version "17.1.0"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-17.1.0.tgz#f16b876c8bb46766125e17ee4d7f52682fbf3b7b"
+ak-navigation@^17.1.2:
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-17.1.2.tgz#bd73322835ab8cf5b04e2dabebefff45a03fe7aa"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-common "^5.0.0"
