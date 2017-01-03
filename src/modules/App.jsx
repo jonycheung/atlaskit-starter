@@ -51,11 +51,11 @@ export default class App extends PureComponent {
             </Link>
           }
           globalPrimaryItem={
-            <AkGlobalItem size="large">
-              <Link to="/" style={{ color: 'white' }}>
-                <AtlassianIcon size="medium" label="Atlassian" />
-              </Link>
-            </AkGlobalItem>
+            <Link to="/" style={{ color: 'white' }}>
+              <AkGlobalItem size="large">
+                  <AtlassianIcon size="medium" label="Atlassian" />
+              </AkGlobalItem>
+            </Link>
           }
         >
           {
