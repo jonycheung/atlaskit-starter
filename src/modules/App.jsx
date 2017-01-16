@@ -23,7 +23,13 @@ const myLinks = [
 
 export default class App extends PureComponent {
   static contextTypes = {
+    navOpenState: PropTypes.object,
     router: PropTypes.object,
+  }
+
+  static PropTypes = {
+    navOpenState: PropTypes.object,
+    onNavResize: PropTypes.func,
   }
 
   render() {
@@ -40,10 +46,13 @@ export default class App extends PureComponent {
             section { margin-top: ${gridSizeInt * 3}px; }
         `}</style>
         <Nav
+          isOpen={this.context.navOpenState.isOpen}
+          width={this.context.navOpenState.width}
+          onResize={this.props.onNavResize}
           containerHeader={
             <Link to="/">
               <NavHeader
-                text="AtlasCat"
+                text="AtlasKit"
                 icon={
                   <img alt="nucleus" src={nucleusImage} />
                 }
@@ -53,7 +62,7 @@ export default class App extends PureComponent {
           globalPrimaryItem={
             <Link to="/" style={{ color: 'white' }}>
               <AkGlobalItem size="large">
-                  <AtlassianIcon size="medium" label="Atlassian" />
+                <AtlassianIcon size="medium" label="Atlassian" />
               </AkGlobalItem>
             </Link>
           }
