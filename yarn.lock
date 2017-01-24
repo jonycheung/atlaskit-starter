@@ -52,6 +52,14 @@ ajv@^4.7.0:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
+ak-avatar@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/ak-avatar/-/ak-avatar-5.1.1.tgz#29031b7f36ae8153d06459140e0c10528e8705d7"
+  dependencies:
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
 ak-blanket@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/ak-blanket/-/ak-blanket-6.0.1.tgz#6401069172d2205f1e1aed51b33f80b8aba9c6e0"
@@ -60,7 +68,7 @@ ak-blanket@^6.0.1:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-button@^5.2.0:
+ak-button@^5.1.1, ak-button@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.2.0.tgz#51b78d91bf1316957f627f5b8fb3a7cbe19d455a"
   dependencies:
@@ -74,26 +82,94 @@ ak-css-reset@^1.3.1:
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-ak-icon@^12.2.0:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-12.2.0.tgz#9d386742ce036ba990a01257f8bc406a2a3c05b6"
+ak-dropdown-menu@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/ak-dropdown-menu/-/ak-dropdown-menu-2.2.3.tgz#7ed9e8154391c79df5a0b969cf58c931789dfd5c"
+  dependencies:
+    uid "0.0.2"
+    ak-button "^5.1.1"
+    ak-droplist "^4.0.0"
+    ak-droplist-group "^2.0.2"
+    ak-droplist-item "^3.1.1"
+    ak-icon "^12.2.0"
+    ak-layer "^62.0.2"
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    keycode "^2.1.2"
+
+ak-droplist-group@^2.0.2:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/ak-droplist-group/-/ak-droplist-group-2.2.1.tgz#e9735e65ad64276f979f417549f152fdf1ec307a"
+  dependencies:
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
+ak-droplist-item@^3.1.1:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/ak-droplist-item/-/ak-droplist-item-3.5.0.tgz#4e91838503b4133d01189fe4ceaa8b03007b679d"
+  dependencies:
+    ak-icon "^12.1.3"
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    keycode "^2.1.7"
+
+ak-droplist-trigger@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ak-droplist-trigger/-/ak-droplist-trigger-2.0.1.tgz#6f24f94afdabe3dd606dbb61fbfe39d11c9d3d1d"
+  dependencies:
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    keycode "^2.1.7"
+
+ak-droplist@^4.0.0:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/ak-droplist/-/ak-droplist-4.2.3.tgz#8af21982f4e7298fe7bd048e60fe536ea408fff2"
+  dependencies:
+    ak-droplist-trigger "^2.0.0"
+    ak-layer "^62.0.2"
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
+ak-icon@^12.1.3, ak-icon@^12.2.0:
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-12.2.1.tgz#181c6cfc4a92a0be76594742afcb41e62cbd1330"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
     create-error "^0.3.1"
 
-ak-modal-dialog@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-1.2.3.tgz#53816d89aa147d1aaa39501daab90b2971ec506c"
+ak-icon@^14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-14.0.0.tgz#5e0305d6186e8f9a9fbcd655330dab73599667b8"
+  dependencies:
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    create-error "^0.3.1"
+
+ak-layer@^62.0.2:
+  version "62.2.1"
+  resolved "https://registry.yarnpkg.com/ak-layer/-/ak-layer-62.2.1.tgz#a378cdc526b35806106f4f8388afdd171f83e20f"
+  dependencies:
+    babel-runtime "^6.11.6"
+    popper.js "^1.0.1"
+
+ak-modal-dialog@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-2.0.0.tgz#1d81bf58f27e93b4d62c8d4d0e6b8e9e9a08026a"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-shared-styles "^37.0.3"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^17.4.0:
-  version "17.4.0"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-17.4.0.tgz#4042cac1dbf2cc56805262e43275b2f5456a7906"
+ak-navigation@^19.0.0:
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-19.0.1.tgz#689592e1de9ebaf9c459f11bfe592853cad414b4"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-common "^5.0.0"
@@ -3191,7 +3267,7 @@ jsx-ast-utils@^1.0.0, jsx-ast-utils@^1.3.1:
     acorn-jsx "^3.0.1"
     object-assign "^4.1.0"
 
-keycode@^2.1.2:
+keycode@^2.1.2, keycode@^2.1.7:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.1.7.tgz#7b9255919f6cff562b09a064d222dca70b020f5c"
 
@@ -3841,6 +3917,10 @@ pkg-up@^1.0.0:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
+
+popper.js@^1.0.1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.0.4.tgz#8b4b567abdd7ac7747b9799bb7553c62e47f30dd"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -5028,6 +5108,10 @@ uglify-to-browserify@~1.0.0:
 uid-number@~0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
+
+uid@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/uid/-/uid-0.0.2.tgz#5e4a5d4b78138b4f70f89fd3c76fc59aa9d2f103"
 
 uniq@^1.0.1:
   version "1.0.1"
