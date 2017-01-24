@@ -3,7 +3,6 @@ import 'ak-css-reset';
 import { Link } from 'react-router';
 
 import Nav, { AkContainerItem, AkContainerHeader as NavHeader, AkGlobalItem } from 'ak-navigation';
-import { akGridSize } from 'akutil-shared-styles';
 import AkDropdownMenu from 'ak-dropdown-menu';
 import AkAvatar from 'ak-avatar';
 
@@ -18,9 +17,7 @@ import ArrowleftIcon from 'ak-icon/glyph/arrowleft';
 
 import nucleusImage from '../../public/nucleus.png';
 
-// Would like to use a LESS file to import styles here,
-// but create-react-app doesn't support it.
-const gridSizeInt = parseInt(akGridSize, 10);
+import { gridSizeInt } from '../constants';
 
 const myLinks = [
   ['/', 'Home', DashboardIcon],
