@@ -2,30 +2,35 @@ import React, { PureComponent, PropTypes } from 'react';
 import 'ak-css-reset';
 import { Link } from 'react-router';
 
-import Nav, { AkContainerItem, AkContainerHeader as NavHeader, AkGlobalItem } from 'ak-navigation';
-import AkDropdownMenu from 'ak-dropdown-menu';
-import AkAvatar from 'ak-avatar';
+import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigation';
 
 import DashboardIcon from 'ak-icon/glyph/bitbucket/dashboard';
 import PullRequestsIcon from 'ak-icon/glyph/bitbucket/pullrequests';
 import GearIcon from 'ak-icon/glyph/bitbucket/admin';
 import AtlassianIcon from 'ak-icon/glyph/atlassian';
 import SearchIcon from 'ak-icon/glyph/search';
-import HelpIcon from 'ak-icon/glyph/help';
 import CreateIcon from 'ak-icon/glyph/create';
 import ArrowleftIcon from 'ak-icon/glyph/arrowleft';
+
+import HelpDropdownMenu from '../components/HelpDropdownMenu';
+import AccountDropdownMenu from '../components/AccountDropdownMenu';
 
 import nucleusImage from '../../public/nucleus.png';
 
 import { gridSizeInt } from '../constants';
 
-const myLinks = [
+const navLinks = [
   ['/', 'Home', DashboardIcon],
   ['/pull-requests', 'Pull requests', PullRequestsIcon],
   ['/settings', 'Settings', GearIcon],
 ];
 
 export default class App extends PureComponent {
+  state = {
+    isCreateDrawerOpen: false,
+    isSearchDrawerOpen: false,
+  }
+
   static contextTypes = {
     router: PropTypes.object,
   };
@@ -57,57 +62,20 @@ export default class App extends PureComponent {
           globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
           globalSearchIcon={<SearchIcon label="Search icon" />}
           drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
-          globalAccountItem={
-            <AkDropdownMenu
-              appearance="tall"
-              position="right bottom"
-              items={[
-                {
-                  heading: 'Joshua Nelson',
-                  items: [
-                    { content: 'View profile' },
-                    { content: 'Manage Atlassian account' },
-                    { content: 'Bitbucket settings' },
-                    { content: 'Integrations' },
-                    { content: 'Bitbucket labs' },
-                    { content: 'Log out' },
-                  ],
-                },
-              ]}
-            >
-              <AkGlobalItem>
-                <AkAvatar size="small" />
-              </AkGlobalItem>
-            </AkDropdownMenu>
-          }
+          globalAccountItem={AccountDropdownMenu}
           globalCreateIcon={<CreateIcon label="Create icon" />}
-          globalHelpItem={
-            <AkDropdownMenu
-              appearance="tall"
-              items={[
-                {
-                  heading: 'Help',
-                  items: [
-                    { content: 'Documentation' },
-                    { content: 'Learn Git' },
-                    { content: 'Keyboard shortcuts' },
-                    { content: 'Bitbucket tutorials' },
-                    { content: 'API' },
-                    { content: 'Support' },
-                  ],
-                },
-              ]}
-              position="right bottom"
-            >
-              <AkGlobalItem>
-                <HelpIcon label="Help icon" />
-              </AkGlobalItem>
-            </AkDropdownMenu>
-          }
-
+          globalHelpItem={HelpDropdownMenu}
+          isSearchDrawerOpen={this.state.isSearchDrawerOpen}
+          onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
+          onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
+          searchDrawerContent={<p>Search drawer goes here</p>}
+          isCreateDrawerOpen={this.state.isCreateDrawerOpen}
+          onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
+          onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
+          createDrawerContent={<p>Create drawer goes here</p>}
         >
           {
-            myLinks.map(link => {
+            navLinks.map(link => {
               const [url, title, Icon] = link;
               return (
                 <Link key={url} to={url}>
@@ -122,9 +90,7 @@ export default class App extends PureComponent {
           }
         </Nav>
 
-        <div style={{ margin: `${4 * gridSizeInt}px ${8 * gridSizeInt}px` }}>
-          {this.props.children}
-        </div>
+        {this.props.children}
       </div>
     );
   }

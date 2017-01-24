@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import Button from 'ak-button';
 import Modal from 'ak-modal-dialog';
-import CupcakeIpsum from '../modules/CupcakeIpsum.jsx';
-import { gridSizeInt } from '../constants';
+import CupcakeIpsum from '../components/CupcakeIpsum';
+import ContentWrapper from '../components/ContentWrapper';
 
 export default class HomePage extends PureComponent {
   constructor() {
@@ -22,7 +22,7 @@ export default class HomePage extends PureComponent {
 
   render() {
     return (
-      <div style={{paddingBottom: `${gridSizeInt*3}px`}}>
+      <ContentWrapper>
         <h1>My awesome app</h1>
         <CupcakeIpsum paragraphs={5} />
         <p>
@@ -31,11 +31,7 @@ export default class HomePage extends PureComponent {
             onClick={this.showModal}
           >Click for cupcakes</Button>
         </p>
-        {
-          // TODO: this is a hack, this should be deleted when this issue is solved:
-          // https://ecosystem.atlassian.net/browse/AK-1164
-        }
-        <div style={{zIndex: 500, position: 'relative'}}>
+        <div>
           <Modal
             header={
               <h2>Candy bar</h2>
@@ -51,7 +47,7 @@ export default class HomePage extends PureComponent {
             </p>
           </Modal>
         </div>
-      </div>
+      </ContentWrapper>
     );
   }
 }
