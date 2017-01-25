@@ -68,9 +68,9 @@ ak-blanket@^6.0.1:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-button@^5.1.1, ak-button@^5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.4.2.tgz#7231fbdb94ad95d5b2feb24d38da952a1a506e71"
+ak-button@^5.1.1, ak-button@^5.4.3:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.4.3.tgz#243d4d87647ac8d0403f59967f0523f44a2bb82a"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
@@ -167,9 +167,9 @@ ak-modal-dialog@^2.0.1:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-navigation@^19.0.0:
-  version "19.0.1"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-19.0.1.tgz#689592e1de9ebaf9c459f11bfe592853cad414b4"
+ak-navigation@^19.0.2:
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-19.0.2.tgz#65e7d37afa3ac23ca0492de8b795365eee150f2e"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-common "^5.0.0"
