@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import Button from 'ak-button';
-import Modal from 'ak-modal-dialog';
+import Button from '@atlaskit/button';
+import Modal from '@atlaskit/modal-dialog';
 import CupcakeIpsum from '../components/CupcakeIpsum';
 import ContentWrapper from '../components/ContentWrapper';
 

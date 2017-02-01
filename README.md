@@ -22,7 +22,7 @@ yarn add ak-button
 Then in the relevant React component file (e.g. `src/App.jsx`) do the following:
 
 ```js
-import Button from 'ak-button';
+import Button from '@atlaskit/button';
 
 // ...
 

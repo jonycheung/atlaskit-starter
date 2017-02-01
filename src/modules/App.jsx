@@ -1,16 +1,16 @@
 import React, { PureComponent, PropTypes } from 'react';
-import 'ak-css-reset';
+import '@atlaskit/css-reset';
 import { Link } from 'react-router';
 
-import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from 'ak-navigation';
+import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from '@atlaskit/navigation';
 
-import DashboardIcon from 'ak-icon/glyph/bitbucket/dashboard';
-import PullRequestsIcon from 'ak-icon/glyph/bitbucket/pullrequests';
-import GearIcon from 'ak-icon/glyph/bitbucket/admin';
-import AtlassianIcon from 'ak-icon/glyph/atlassian';
-import SearchIcon from 'ak-icon/glyph/search';
-import CreateIcon from 'ak-icon/glyph/create';
-import ArrowleftIcon from 'ak-icon/glyph/arrowleft';
+import DashboardIcon from '@atlaskit/icon/glyph/dashboard';
+import PullRequestsIcon from '@atlaskit/icon/glyph/bitbucket/pullrequests';
+import GearIcon from '@atlaskit/icon/glyph/settings';
+import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
+import SearchIcon from '@atlaskit/icon/glyph/search';
+import CreateIcon from '@atlaskit/icon/glyph/add';
+import ArrowleftIcon from '@atlaskit/icon/glyph/arrowleft';
 
 import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';

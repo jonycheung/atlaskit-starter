@@ -1,7 +1,7 @@
 import React from 'react';
-import AkDropdownMenu from 'ak-dropdown-menu';
-import { AkGlobalItem } from 'ak-navigation';
-import AkAvatar from 'ak-avatar';
+import AkDropdownMenu from '@atlaskit/dropdown-menu';
+import { AkGlobalItem } from '@atlaskit/navigation';
+import AkAvatar from '@atlaskit/avatar';
 
 export default (
   <AkDropdownMenu

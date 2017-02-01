@@ -1,7 +1,7 @@
 import React from 'react';
-import AkDropdownMenu from 'ak-dropdown-menu';
-import { AkGlobalItem } from 'ak-navigation';
-import HelpIcon from 'ak-icon/glyph/help';
+import AkDropdownMenu from '@atlaskit/dropdown-menu';
+import { AkGlobalItem } from '@atlaskit/navigation';
+import HelpIcon from '@atlaskit/icon/glyph/question';
 
 export default (
   <AkDropdownMenu

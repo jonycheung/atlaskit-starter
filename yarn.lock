@@ -2,6 +2,86 @@
 # yarn lockfile v1
 
 
+"@atlaskit/avatar@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/avatar/-/avatar-1.0.1.tgz#6fcd362c50eeec486ae9907adde4b568b161f942"
+  dependencies:
+    "@atlaskit/util-shared-styles" "^1.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
+"@atlaskit/blanket@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/blanket/-/blanket-1.0.0.tgz#a055a10347fe3b6ef53a773e71e7ef32824ccba2"
+  dependencies:
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
+"@atlaskit/button@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/button/-/button-1.0.0.tgz#4cff7fb4cc9e8eebdc7c4e49220b07792a8d00c9"
+  dependencies:
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
+"@atlaskit/css-reset@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/css-reset/-/css-reset-1.0.0.tgz#a2ed6a22db8e02ab49c988711ac214934d4a6868"
+  dependencies:
+    akutil-shared-styles "^37.1.0"
+
+"@atlaskit/dropdown-menu@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/dropdown-menu/-/dropdown-menu-1.0.0.tgz#3852c2208924ac37264eef09a1150ca4949b59da"
+  dependencies:
+    uid "0.0.2"
+    ak-button "^5.1.1"
+    ak-droplist "^4.0.0"
+    ak-droplist-group "^2.0.2"
+    ak-droplist-item "^4.0.3"
+    ak-icon "^12.2.0"
+    ak-layer "^62.0.2"
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    keycode "^2.1.2"
+
+"@atlaskit/icon@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-2.2.0.tgz#ec42b0238d9b8dc1f2b091e1dc3313c26a1f9213"
+  dependencies:
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    create-error "^0.3.1"
+
+"@atlaskit/modal-dialog@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@atlaskit/modal-dialog/-/modal-dialog-1.0.2.tgz#d03ac009ed21601781f6ac46874998181100f5a7"
+  dependencies:
+    "@atlaskit/blanket" "^1.0.0"
+    "@atlaskit/util-shared-styles" "^1.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
+"@atlaskit/navigation@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/navigation/-/navigation-1.1.0.tgz#aecb67192b412eb301583bb674bb049bd551bc47"
+  dependencies:
+    ak-blanket "^6.0.1"
+    akutil-common "^5.0.0"
+    akutil-shared-styles "^37.0.0"
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    keycode "^2.1.2"
+
+"@atlaskit/util-shared-styles@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/util-shared-styles/-/util-shared-styles-1.0.1.tgz#742cb4237884ef0b3182ca0f64e3d58b918853a6"
+  dependencies:
+    babel-runtime "^6.11.6"
+
 abab@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -52,51 +132,21 @@ ajv@^4.7.0:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-ak-avatar@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/ak-avatar/-/ak-avatar-5.1.1.tgz#29031b7f36ae8153d06459140e0c10528e8705d7"
-  dependencies:
-    akutil-shared-styles "^37.0.0"
-    babel-runtime "^6.11.6"
-    classnames "^2.2.5"
-
 ak-blanket@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ak-blanket/-/ak-blanket-6.0.1.tgz#6401069172d2205f1e1aed51b33f80b8aba9c6e0"
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/ak-blanket/-/ak-blanket-6.0.3.tgz#855a2264f40f2d83f0930e14c28aaa738805681c"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-button@^5.1.1, ak-button@^5.4.3:
+ak-button@^5.1.1:
   version "5.4.3"
   resolved "https://registry.yarnpkg.com/ak-button/-/ak-button-5.4.3.tgz#243d4d87647ac8d0403f59967f0523f44a2bb82a"
   dependencies:
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
-
-ak-css-reset@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/ak-css-reset/-/ak-css-reset-1.3.1.tgz#44fdf26c410e8340246ae4f0a03b4ff84495c8ac"
-  dependencies:
-    akutil-shared-styles "^37.1.0"
-
-ak-dropdown-menu@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/ak-dropdown-menu/-/ak-dropdown-menu-2.3.0.tgz#2c2b2480beb1d249ca01ee21eae4032c9671765d"
-  dependencies:
-    uid "0.0.2"
-    ak-button "^5.1.1"
-    ak-droplist "^4.0.0"
-    ak-droplist-group "^2.0.2"
-    ak-droplist-item "^3.1.1"
-    ak-icon "^12.2.0"
-    ak-layer "^62.0.2"
-    akutil-shared-styles "^37.0.0"
-    babel-runtime "^6.11.6"
-    classnames "^2.2.5"
-    keycode "^2.1.2"
 
 ak-droplist-group@^2.0.2:
   version "2.2.1"
@@ -106,15 +156,14 @@ ak-droplist-group@^2.0.2:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-ak-droplist-item@^3.1.1:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/ak-droplist-item/-/ak-droplist-item-3.5.0.tgz#4e91838503b4133d01189fe4ceaa8b03007b679d"
+ak-droplist-item@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/ak-droplist-item/-/ak-droplist-item-4.0.3.tgz#731ddcbc0a6974f39230f5cbf45391a409594cf2"
   dependencies:
     ak-icon "^12.1.3"
     akutil-shared-styles "^37.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
-    keycode "^2.1.7"
 
 ak-droplist-trigger@^2.0.0:
   version "2.0.1"
@@ -126,8 +175,8 @@ ak-droplist-trigger@^2.0.0:
     keycode "^2.1.7"
 
 ak-droplist@^4.0.0:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/ak-droplist/-/ak-droplist-4.2.3.tgz#8af21982f4e7298fe7bd048e60fe536ea408fff2"
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/ak-droplist/-/ak-droplist-4.3.0.tgz#27fde38e5a8f2c374caf0add7df0114fd4d758f0"
   dependencies:
     ak-droplist-trigger "^2.0.0"
     ak-layer "^62.0.2"
@@ -143,40 +192,13 @@ ak-icon@^12.1.3, ak-icon@^12.2.0:
     classnames "^2.2.5"
     create-error "^0.3.1"
 
-ak-icon@^14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/ak-icon/-/ak-icon-14.0.0.tgz#5e0305d6186e8f9a9fbcd655330dab73599667b8"
-  dependencies:
-    babel-runtime "^6.11.6"
-    classnames "^2.2.5"
-    create-error "^0.3.1"
-
 ak-layer@^62.0.2:
-  version "62.2.1"
-  resolved "https://registry.yarnpkg.com/ak-layer/-/ak-layer-62.2.1.tgz#a378cdc526b35806106f4f8388afdd171f83e20f"
+  version "62.2.2"
+  resolved "https://registry.yarnpkg.com/ak-layer/-/ak-layer-62.2.2.tgz#6012fafc7b5d498414fac8e0ff21c4aca2738808"
   dependencies:
+    akutil-shared-styles "^37.3.2"
     babel-runtime "^6.11.6"
     popper.js "^1.0.1"
-
-ak-modal-dialog@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/ak-modal-dialog/-/ak-modal-dialog-2.0.1.tgz#219623fb4af7ecb02f8365b0168edf4b3920a8d1"
-  dependencies:
-    ak-blanket "^6.0.1"
-    akutil-shared-styles "^37.0.3"
-    babel-runtime "^6.11.6"
-    classnames "^2.2.5"
-
-ak-navigation@^19.0.2:
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/ak-navigation/-/ak-navigation-19.0.2.tgz#65e7d37afa3ac23ca0492de8b795365eee150f2e"
-  dependencies:
-    ak-blanket "^6.0.1"
-    akutil-common "^5.0.0"
-    akutil-shared-styles "^37.0.0"
-    babel-runtime "^6.11.6"
-    classnames "^2.2.5"
-    keycode "^2.1.2"
 
 akutil-common@^5.0.0:
   version "5.0.1"
@@ -186,7 +208,7 @@ akutil-common@^5.0.0:
     create-error "^0.3.1"
     keycode "^2.1.2"
 
-akutil-shared-styles@^37.0.0, akutil-shared-styles@^37.0.3, akutil-shared-styles@^37.1.0, akutil-shared-styles@^37.3.3:
+akutil-shared-styles@^37.0.0, akutil-shared-styles@^37.1.0, akutil-shared-styles@^37.3.2, akutil-shared-styles@^37.3.3:
   version "37.3.3"
   resolved "https://registry.yarnpkg.com/akutil-shared-styles/-/akutil-shared-styles-37.3.3.tgz#18a47a6ed5c37a554786ecafb59022a1ffc9c8e5"
   dependencies:
@@ -2101,7 +2123,7 @@ events@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
-eventsource@^0.1.3, eventsource@~0.1.6:
+eventsource@^0.1.3:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-0.1.6.tgz#0acede849ed7dd1ccc32c811bb11b944d4f29232"
   dependencies:
@@ -2193,12 +2215,6 @@ fastparse@^1.1.1:
 faye-websocket@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.10.0.tgz#4e492f8d04dfb6f89003507f6edbf2d501e7c6f4"
-  dependencies:
-    websocket-driver ">=0.5.1"
-
-faye-websocket@~0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.11.0.tgz#d9ccf0e789e7db725d74bc4877d23aa42972ac50"
   dependencies:
     websocket-driver ">=0.5.1"
 
@@ -3350,8 +3366,8 @@ jsx-ast-utils@^1.0.0, jsx-ast-utils@^1.3.1:
     object-assign "^4.1.0"
 
 keycode@^2.1.2, keycode@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.1.7.tgz#7b9255919f6cff562b09a064d222dca70b020f5c"
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.1.8.tgz#94d2b7098215eff0e8f9a8931d5a59076c4532fb"
 
 kind-of@^3.0.2:
   version "3.0.4"
@@ -4016,8 +4032,8 @@ pluralize@^1.2.1:
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
 
 popper.js@^1.0.1:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.0.4.tgz#8b4b567abdd7ac7747b9799bb7553c62e47f30dd"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.0.5.tgz#1807f60905699ea48e9850aa5d736c974aadacf1"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -4527,7 +4543,7 @@ readable-stream@1.0:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@^2.1.0:
+"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.1.0:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.2.tgz#a9e6fec3c7dda85f8bb1b3ba7028604556fc825e"
   dependencies:
@@ -4539,7 +4555,7 @@ readable-stream@1.0:
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
-readable-stream@~2.0.0:
+readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@~2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
@@ -4875,7 +4891,7 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
-sockjs-client@1.0.3:
+sockjs-client@1.0.3, sockjs-client@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sockjs-client/-/sockjs-client-1.0.3.tgz#b0d8280998460eb2564c5d79d7e3d7cfd8a353ad"
   dependencies:
@@ -4885,17 +4901,6 @@ sockjs-client@1.0.3:
     inherits "^2.0.1"
     json3 "^3.3.2"
     url-parse "^1.0.1"
-
-sockjs-client@^1.0.3:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/sockjs-client/-/sockjs-client-1.1.1.tgz#284843e9a9784d7c474b1571b3240fca9dda4bb0"
-  dependencies:
-    debug "^2.2.0"
-    eventsource "~0.1.6"
-    faye-websocket "~0.11.0"
-    inherits "^2.0.1"
-    json3 "^3.3.2"
-    url-parse "^1.1.1"
 
 sockjs@^0.3.15:
   version "0.3.18"
@@ -5051,9 +5056,9 @@ style-loader@0.13.1:
   dependencies:
     loader-utils "^0.2.7"
 
-styled-components@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-1.3.1.tgz#219aebf87405d890e0c60c8f702089d947aafc0a"
+styled-components@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-1.4.2.tgz#4fbb0e30b5adacd5c02ad7f6f1ff869c68fdc9a8"
   dependencies:
     buffer "^5.0.2"
     css-to-react-native "^1.0.6"
@@ -5278,7 +5283,7 @@ url-parse@1.0.x:
     querystringify "0.0.x"
     requires-port "1.0.x"
 
-url-parse@^1.0.1, url-parse@^1.1.1:
+url-parse@^1.0.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.1.7.tgz#025cff999653a459ab34232147d89514cc87d74a"
   dependencies:
@@ -5399,7 +5404,7 @@ webpack-dev-middleware@^1.4.0:
     path-is-absolute "^1.0.0"
     range-parser "^1.0.3"
 
-webpack-dev-server@1.16.2, webpack-dev-server@^1.16.2:
+webpack-dev-server@1.16.2:
   version "1.16.2"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-1.16.2.tgz#8bebc2c4ce1c45a15c72dd769d9ba08db306a793"
   dependencies:
@@ -5431,7 +5436,7 @@ webpack-sources@^0.1.0:
     source-list-map "~0.1.0"
     source-map "~0.5.3"
 
-webpack@1.14.0, webpack@^1.14.0:
+webpack@1.14.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-1.14.0.tgz#54f1ffb92051a328a5b2057d6ae33c289462c823"
   dependencies:
