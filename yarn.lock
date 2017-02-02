@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@atlaskit/avatar@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@atlaskit/avatar/-/avatar-1.0.1.tgz#6fcd362c50eeec486ae9907adde4b568b161f942"
+"@atlaskit/avatar@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/avatar/-/avatar-2.0.0.tgz#31bbbd752bd080ba158e218101f8fe64fb72cbd8"
   dependencies:
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
@@ -32,9 +32,9 @@
   dependencies:
     akutil-shared-styles "^37.1.0"
 
-"@atlaskit/dropdown-menu@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@atlaskit/dropdown-menu/-/dropdown-menu-1.0.0.tgz#3852c2208924ac37264eef09a1150ca4949b59da"
+"@atlaskit/dropdown-menu@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/dropdown-menu/-/dropdown-menu-1.1.0.tgz#3313591b51012f2ffa9a60daa7d1e5bf347a9eb5"
   dependencies:
     uid "0.0.2"
     ak-button "^5.1.1"
@@ -48,26 +48,26 @@
     classnames "^2.2.5"
     keycode "^2.1.2"
 
-"@atlaskit/icon@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-2.2.0.tgz#ec42b0238d9b8dc1f2b091e1dc3313c26a1f9213"
+"@atlaskit/icon@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-2.3.0.tgz#ee14cd177aa0bc52ca8cbbe39350858afa214962"
   dependencies:
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
     create-error "^0.3.1"
 
-"@atlaskit/modal-dialog@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@atlaskit/modal-dialog/-/modal-dialog-1.0.2.tgz#d03ac009ed21601781f6ac46874998181100f5a7"
+"@atlaskit/modal-dialog@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/modal-dialog/-/modal-dialog-1.2.0.tgz#25572a6e61d911dd62c502160e59f62671ba035b"
   dependencies:
     "@atlaskit/blanket" "^1.0.0"
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-"@atlaskit/navigation@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@atlaskit/navigation/-/navigation-1.1.0.tgz#aecb67192b412eb301583bb674bb049bd551bc47"
+"@atlaskit/navigation@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/navigation/-/navigation-1.2.0.tgz#622f0878d68d741a9aa5e6b8aced710d5897200c"
   dependencies:
     ak-blanket "^6.0.1"
     akutil-common "^5.0.0"
@@ -3784,11 +3784,11 @@ minimist@0.0.8, minimist@~0.0.1:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@1.1.1:
+minimist@1.1.1, minimist@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.1.1.tgz#1bc2bc71658cdca5712475684363615b0b4f695b"
 
-minimist@^1.1.1, minimist@^1.2.0:
+minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
