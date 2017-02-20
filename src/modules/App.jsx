@@ -2,7 +2,7 @@ import React, { PureComponent, PropTypes } from 'react';
 import '@atlaskit/css-reset';
 import { Link } from 'react-router';
 
-import Nav, { AkContainerItem, AkContainerHeader as NavHeader } from '@atlaskit/navigation';
+import Nav, { AkContainerItem, AkContainerTitle } from '@atlaskit/navigation';
 
 import DashboardIcon from '@atlaskit/icon/glyph/dashboard';
 import PullRequestsIcon from '@atlaskit/icon/glyph/bitbucket/pullrequests';
@@ -32,8 +32,14 @@ export default class App extends PureComponent {
   }
 
   static contextTypes = {
+    navOpenState: PropTypes.object,
     router: PropTypes.object,
   };
+
+  static PropTypes = {
+    navOpenState: PropTypes.object,
+    onNavResize: PropTypes.func,
+  }
 
   render() {
     return (
@@ -49,16 +55,18 @@ export default class App extends PureComponent {
             section { margin-top: ${gridSizeInt * 3}px; }
         `}</style>
         <Nav
-          containerHeader={
-            <Link to="/">
-              <NavHeader
-                text="AtlasCat"
-                icon={
-                  <img alt="nucleus" src={nucleusImage} />
-                }
-              />
-            </Link>
-          }
+          isOpen={this.context.navOpenState.isOpen}
+          width={this.context.navOpenState.width}
+          onResize={this.props.onNavResize}
+          containerHeaderComponent={() => (
+            <AkContainerTitle
+              href="#foo"
+              icon={
+                <img alt="nucleus" src={nucleusImage} />
+              }
+              text="AtlasKit"
+            />
+          )}
           globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
           globalSearchIcon={<SearchIcon label="Search icon" />}
           drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
