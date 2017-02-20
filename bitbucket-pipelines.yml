@@ -1,6 +1,14 @@
 image: node:6
 
 pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - npm install -g yarn
+            - yarn
+            - npm run build
+            - npm run surge
   default:
     - step:
         script:

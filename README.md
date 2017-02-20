@@ -2,6 +2,8 @@
 
 This is a basic app which includes some AtlasKit components, built on top of [create-react-app](https://github.com/facebookincubator/create-react-app). You can use this as a starting point for your next ADG3-themed project.
 
+A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-starter.surge.sh/)
+
 ## Getting started
 
 ```bash
@@ -22,7 +24,7 @@ yarn add ak-button
 Then in the relevant React component file (e.g. `src/App.jsx`) do the following:
 
 ```js
-import Button from 'ak-button';
+import Button from '@atlaskit/button';
 
 // ...
 
@@ -37,4 +39,4 @@ render() {
 
 This repo is helpful for people using AtlasKit + React for the first time. If you've had a look and have more questions, please contact the team in the "AtlasKit" HipChat room.
 
-![Screenshot](https://bitbucket.org/atlassian/atlaskit-starter/raw/master/screenshot.png)
+![Screenshot](https://i.imgur.com/p4N266G.gif)

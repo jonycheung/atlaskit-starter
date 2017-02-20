@@ -1,31 +1,40 @@
 import React, { PureComponent, PropTypes } from 'react';
-import Nav, { AkContainerItem, AkContainerHeader as NavHeader, AkGlobalItem } from 'ak-navigation';
+import '@atlaskit/css-reset';
 import { Link } from 'react-router';
-import { akGridSize } from 'akutil-shared-styles';
+
+import Nav, { AkContainerItem, AkContainerTitle } from '@atlaskit/navigation';
+
+import DashboardIcon from '@atlaskit/icon/glyph/dashboard';
+import PullRequestsIcon from '@atlaskit/icon/glyph/bitbucket/pullrequests';
+import GearIcon from '@atlaskit/icon/glyph/settings';
+import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
+import SearchIcon from '@atlaskit/icon/glyph/search';
+import CreateIcon from '@atlaskit/icon/glyph/add';
+import ArrowleftIcon from '@atlaskit/icon/glyph/arrowleft';
+
+import HelpDropdownMenu from '../components/HelpDropdownMenu';
+import AccountDropdownMenu from '../components/AccountDropdownMenu';
+
 import nucleusImage from '../../public/nucleus.png';
-import {
-  AtlassianIcon,
-  BitbucketDashboardIcon as DashboardIcon,
-  BitbucketPullrequestsIcon as PullRequestsIcon,
-  BitbucketAdminIcon as GearIcon,
-} from 'ak-icon';
-import 'ak-css-reset';
 
-// Would like to use a LESS file to import styles here,
-// but create-react-app doesn't support it.
-const gridSizeInt = parseInt(akGridSize, 10);
+import { gridSizeInt } from '../constants';
 
-const myLinks = [
+const navLinks = [
   ['/', 'Home', DashboardIcon],
   ['/pull-requests', 'Pull requests', PullRequestsIcon],
   ['/settings', 'Settings', GearIcon],
 ];
 
 export default class App extends PureComponent {
+  state = {
+    isCreateDrawerOpen: false,
+    isSearchDrawerOpen: false,
+  }
+
   static contextTypes = {
     navOpenState: PropTypes.object,
     router: PropTypes.object,
-  }
+  };
 
   static PropTypes = {
     navOpenState: PropTypes.object,
@@ -49,26 +58,32 @@ export default class App extends PureComponent {
           isOpen={this.context.navOpenState.isOpen}
           width={this.context.navOpenState.width}
           onResize={this.props.onNavResize}
-          containerHeader={
-            <Link to="/">
-              <NavHeader
-                text="AtlasKit"
-                icon={
-                  <img alt="nucleus" src={nucleusImage} />
-                }
-              />
-            </Link>
-          }
-          globalPrimaryItem={
-            <Link to="/" style={{ color: 'white' }}>
-              <AkGlobalItem size="large">
-                <AtlassianIcon size="medium" label="Atlassian" />
-              </AkGlobalItem>
-            </Link>
-          }
+          containerHeaderComponent={() => (
+            <AkContainerTitle
+              href="#foo"
+              icon={
+                <img alt="nucleus" src={nucleusImage} />
+              }
+              text="AtlasKit"
+            />
+          )}
+          globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
+          globalSearchIcon={<SearchIcon label="Search icon" />}
+          drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
+          globalAccountItem={AccountDropdownMenu}
+          globalCreateIcon={<CreateIcon label="Create icon" />}
+          globalHelpItem={HelpDropdownMenu}
+          isSearchDrawerOpen={this.state.isSearchDrawerOpen}
+          onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
+          onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
+          searchDrawerContent={<p>Search drawer goes here</p>}
+          isCreateDrawerOpen={this.state.isCreateDrawerOpen}
+          onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
+          onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
+          createDrawerContent={<p>Create drawer goes here</p>}
         >
           {
-            myLinks.map(link => {
+            navLinks.map(link => {
               const [url, title, Icon] = link;
               return (
                 <Link key={url} to={url}>
@@ -83,10 +98,7 @@ export default class App extends PureComponent {
           }
         </Nav>
 
-        <div style={{ margin: `${4 * gridSizeInt}px ${8 * gridSizeInt}px` }}>
-          {this.props.children}
-        </div>
-
+        {this.props.children}
       </div>
     );
   }
