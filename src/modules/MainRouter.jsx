@@ -11,6 +11,7 @@ export default class MainRouter extends PureComponent {
     this.state = {
       navOpenState: {
         isOpen: true,
+        width: 284,
       }
     }
   }
@@ -22,10 +23,12 @@ export default class MainRouter extends PureComponent {
   }
 
   appWithPersistentNav = () => {
-    return (props) => <App
-      onNavResize={this.onNavResize}
-      {...props}
-    />;
+    return (props) => (
+      <App
+        onNavResize={this.onNavResize}
+        {...props}
+      />
+    );
   }
 
   onNavResize = (navOpenState) => {
@@ -33,7 +36,7 @@ export default class MainRouter extends PureComponent {
       navOpenState,
     });
   }
-  
+
   render() {
     return (
       <Router history={browserHistory}>
