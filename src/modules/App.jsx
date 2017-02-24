@@ -13,6 +13,7 @@ import SearchIcon from '@atlaskit/icon/glyph/search';
 import CreateIcon from '@atlaskit/icon/glyph/add';
 import ArrowleftIcon from '@atlaskit/icon/glyph/arrowleft';
 
+import CreateDrawer from '../components/CreateDrawer';
 import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
 
@@ -71,7 +72,7 @@ export default class App extends PureComponent {
             isCreateDrawerOpen={this.state.isCreateDrawerOpen}
             onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
             onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
-            createDrawerContent={<p>Create drawer goes here</p>}
+            createDrawerContent={CreateDrawer}
           >
             {
               navLinks.map(link => {
