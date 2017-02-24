@@ -14,6 +14,7 @@ import CreateIcon from '@atlaskit/icon/glyph/add';
 import ArrowleftIcon from '@atlaskit/icon/glyph/arrowleft';
 
 import CreateDrawer from '../components/CreateDrawer';
+import SearchDrawer from '../components/SearchDrawer';
 import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
 
@@ -68,7 +69,14 @@ export default class App extends PureComponent {
             isSearchDrawerOpen={this.state.isSearchDrawerOpen}
             onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
             onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
-            searchDrawerContent={<p>Search drawer goes here</p>}
+            searchDrawerContent={
+                <SearchDrawer
+                    onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
+                    onSearchInputRef={(ref) => {
+                        this.searchInputRef = ref;
+                  }}
+                />
+            }
             isCreateDrawerOpen={this.state.isCreateDrawerOpen}
             onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
             onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
