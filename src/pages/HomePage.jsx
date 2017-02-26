@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Button from '@atlaskit/button';
+import Flag, { FlagGroup } from '@atlaskit/flag';
 import Modal from '@atlaskit/modal-dialog';
 import CupcakeIpsum from '../components/CupcakeIpsum';
 import ContentWrapper from '../components/ContentWrapper';
@@ -8,7 +9,8 @@ export default class HomePage extends PureComponent {
   constructor() {
     super();
     this.state = {
-      isOpen: false
+      isOpen: false,
+      flags: [],
     }
   }
 
@@ -18,6 +20,16 @@ export default class HomePage extends PureComponent {
 
   hideModal = () => {
     this.setState({ isOpen: false });
+  }
+
+  addFlag = () => {
+    this.setState({ flags: [{ id: Date.now() }].concat(this.state.flags) });
+  }
+
+  onFlagDismissed = (dismissedFlagId) => {
+    this.setState({
+      flags: this.state.flags.filter(flag => flag.id !== dismissedFlagId),
+    })
   }
 
   render() {
@@ -31,7 +43,22 @@ export default class HomePage extends PureComponent {
             onClick={this.showModal}
           >Click for cupcakes</Button>
         </p>
+        <p>
+          <Button onClick={this.addFlag}>Fire a Flag</Button>
+        </p>
         <div>
+          <FlagGroup onDismissed={this.onFlagDismissed}>
+            {
+              this.state.flags.map(flag => (
+                <Flag
+                  id={flag.id}
+                  key={flag.id}
+                  title="Flag goes here"
+                  description="Flag description goes here"
+                />
+              ))
+            }
+          </FlagGroup>
           <Modal
             header={
               <h2>Candy bar</h2>
