@@ -1,20 +1,19 @@
 import React, {PureComponent} from "react";
 import SearchResults from "./SearchResults";
 
+const items = [
+  { name: 'Events', description: 'List of events.' },
+  { name: 'Nature', description: 'Types of things found in nature.' },
+  { name: 'Ideas', description: 'Page detailing specific project ideas.' },
+  { name: 'Travel Plans', description: 'People\'s travel plans.' },
+  { name: 'Branches', description: 'All BitBucket branches you have access to.' },
+  { name: 'Pages', description: 'Confluence pages you have made.' },
+];
+
 export default class SearchDrawer extends PureComponent {
   state = {
     searchString: '',
-    results: [
-      {name: 'item1', description: 'description of item1'},
-      {name: 'item2', description: 'description of item2'},
-      {name: 'item3', description: 'description of item3'},
-      {name: 'item4', description: 'description of item4'},
-      {name: 'item5', description: 'description of item5'},
-      {name: 'item6', description: 'description of item6'},
-      {name: 'item7', description: 'description of item7'},
-      {name: 'item8', description: 'description of item8'},
-      {name: 'item9', description: 'description of item9'},
-    ]
+    results: items,
   };
 
   filterChange = () => {
@@ -29,14 +28,15 @@ export default class SearchDrawer extends PureComponent {
 
     const matchingResults = results.filter(
       c => (
-        c.name.indexOf(searchString) >= 0 ||
-        (c.description && c.description.indexOf(searchString) >= 0)
+        c.name.toLowerCase().indexOf(searchString.toLowerCase()) >= 0 ||
+        (c.description && c.description.toLowerCase().indexOf(searchString.toLowerCase()) >= 0)
       )
     ).slice(0, 10);
 
     return (
       <SearchResults
         matchingResults={matchingResults}
+        onResultClicked={this.props.onResultClicked}
       />
     )
   };
@@ -59,9 +59,8 @@ export default class SearchDrawer extends PureComponent {
             display: 'block',
             fontSize: 24,
             fontWeight: 200,
-            marginTop: -4,
             outline: 'none',
-            padding: '0 0 0 8',
+            padding: '0 0 0 12px',
           }}
         />
         { this.searchResults() }

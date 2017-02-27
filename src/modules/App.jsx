@@ -30,7 +30,7 @@ export default class App extends PureComponent {
   state = {
     isCreateDrawerOpen: false,
     isSearchDrawerOpen: false,
-  }
+  };
 
   static contextTypes = {
     navOpenState: PropTypes.object,
@@ -40,7 +40,7 @@ export default class App extends PureComponent {
   static PropTypes = {
     navOpenState: PropTypes.object,
     onNavResize: PropTypes.func,
-  }
+  };
 
   render() {
     return (
@@ -70,12 +70,12 @@ export default class App extends PureComponent {
             onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
             onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
             searchDrawerContent={
-                <SearchDrawer
-                    onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
-                    onSearchInputRef={(ref) => {
-                        this.searchInputRef = ref;
-                  }}
-                />
+              <SearchDrawer
+                onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
+                onSearchInputRef={(ref) => {
+                  this.searchInputRef = ref;
+                }}
+              />
             }
             isCreateDrawerOpen={this.state.isCreateDrawerOpen}
             onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}

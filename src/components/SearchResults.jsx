@@ -22,6 +22,7 @@ export default class SearchResults extends PureComponent {
             <li key={result.name} style={{padding: 8}}>
               <Link
                 to={`#${result.name}`}
+                onClick={this.props.onResultClicked}
               >
                 {result.name}
               </Link>
