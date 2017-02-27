@@ -13,12 +13,12 @@ npm run start
 
 ## Using more AtlasKit components
 
-This repo ships with a couple of AtlasKit components such as `ak-navigation`.
+This repo ships with a couple of AtlasKit components such as `@atlaskit/navigation`.
 
 You can add other components (listed at [http://go/ak](http://go/ak)) to your project:
 
 ```bash
-yarn add ak-button
+yarn add @atlaskit/button
 ```
 
 Then in the relevant React component file (e.g. `src/App.jsx`) do the following:
