@@ -2,12 +2,12 @@ import React, {PureComponent} from "react";
 import SearchResults from "./SearchResults";
 
 const items = [
-  { name: 'Events', description: 'List of events.' },
-  { name: 'Nature', description: 'Types of things found in nature.' },
-  { name: 'Ideas', description: 'Page detailing specific project ideas.' },
-  { name: 'Travel Plans', description: 'People\'s travel plans.' },
-  { name: 'Branches', description: 'All BitBucket branches you have access to.' },
-  { name: 'Pages', description: 'Confluence pages you have made.' },
+  { name: 'Events', link: '/#events', description: 'List of events.' },
+  { name: 'Nature', link: '/#nature', description: 'Types of things found in nature.' },
+  { name: 'Ideas', link: '/#ideas', description: 'Page detailing specific project ideas.' },
+  { name: 'Travel Plans', link: '/#travel-plans', description: 'People\'s travel plans.' },
+  { name: 'Branches', link: '/#branches', description: 'All BitBucket branches you have access to.' },
+  { name: 'Pages', link: '/#pages', description: 'Confluence pages you have made.' },
 ];
 
 export default class SearchDrawer extends PureComponent {
@@ -36,7 +36,11 @@ export default class SearchDrawer extends PureComponent {
     return (
       <SearchResults
         matchingResults={matchingResults}
-        onResultClicked={this.props.onResultClicked}
+        onResultClicked={() => {
+          this.props.onResultClicked();
+          this.searchInput.value = '';
+          this.filterChange();
+        }}
       />
     )
   };

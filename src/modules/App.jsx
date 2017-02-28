@@ -80,7 +80,11 @@ export default class App extends PureComponent {
             isCreateDrawerOpen={this.state.isCreateDrawerOpen}
             onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
             onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
-            createDrawerContent={CreateDrawer}
+            createDrawerContent={
+              <CreateDrawer
+                onItemClicked={() => this.setState({ isCreateDrawerOpen: false })}
+              />
+            }
           >
             {
               navLinks.map(link => {

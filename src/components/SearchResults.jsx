@@ -21,7 +21,7 @@ export default class SearchResults extends PureComponent {
           this.props.matchingResults.map(result => (
             <li key={result.name} style={{padding: 8}}>
               <Link
-                to={`#${result.name}`}
+                to={result.link}
                 onClick={this.props.onResultClicked}
               >
                 {result.name}
