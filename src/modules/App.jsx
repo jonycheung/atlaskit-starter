@@ -62,6 +62,7 @@ export default class App extends PureComponent {
             )}
             globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
             globalSearchIcon={<SearchIcon label="Search icon" />}
+            hasBlanket
             drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
             globalAccountItem={AccountDropdownMenu}
             globalCreateIcon={<CreateIcon label="Create icon" />}
