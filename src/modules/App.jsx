@@ -13,6 +13,8 @@ import SearchIcon from '@atlaskit/icon/glyph/search';
 import CreateIcon from '@atlaskit/icon/glyph/add';
 import ArrowleftIcon from '@atlaskit/icon/glyph/arrowleft';
 
+import CreateDrawer from '../components/CreateDrawer';
+import SearchDrawer from '../components/SearchDrawer';
 import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
 
@@ -28,7 +30,7 @@ export default class App extends PureComponent {
   state = {
     isCreateDrawerOpen: false,
     isSearchDrawerOpen: false,
-  }
+  };
 
   static contextTypes = {
     navOpenState: PropTypes.object,
@@ -38,7 +40,7 @@ export default class App extends PureComponent {
   static PropTypes = {
     navOpenState: PropTypes.object,
     onNavResize: PropTypes.func,
-  }
+  };
 
   render() {
     return (
@@ -60,6 +62,7 @@ export default class App extends PureComponent {
             )}
             globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
             globalSearchIcon={<SearchIcon label="Search icon" />}
+            hasBlanket
             drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
             globalAccountItem={AccountDropdownMenu}
             globalCreateIcon={<CreateIcon label="Create icon" />}
@@ -67,11 +70,22 @@ export default class App extends PureComponent {
             isSearchDrawerOpen={this.state.isSearchDrawerOpen}
             onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
             onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
-            searchDrawerContent={<p>Search drawer goes here</p>}
+            searchDrawerContent={
+              <SearchDrawer
+                onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
+                onSearchInputRef={(ref) => {
+                  this.searchInputRef = ref;
+                }}
+              />
+            }
             isCreateDrawerOpen={this.state.isCreateDrawerOpen}
             onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
             onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
-            createDrawerContent={<p>Create drawer goes here</p>}
+            createDrawerContent={
+              <CreateDrawer
+                onItemClicked={() => this.setState({ isCreateDrawerOpen: false })}
+              />
+            }
           >
             {
               navLinks.map(link => {
