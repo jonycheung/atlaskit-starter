@@ -1,4 +1,7 @@
 import React, { PureComponent, PropTypes } from 'react';
+import Button from '@atlaskit/button';
+import Flag, { FlagGroup } from '@atlaskit/flag';
+import Modal from '@atlaskit/modal-dialog';
 import '@atlaskit/css-reset';
 import { Link } from 'react-router';
 
@@ -28,7 +31,9 @@ const navLinks = [
 
 export default class App extends PureComponent {
   state = {
+    flags: [],
     isCreateDrawerOpen: false,
+    isModalOpen: false,
     isSearchDrawerOpen: false,
   };
 
@@ -42,70 +47,130 @@ export default class App extends PureComponent {
     onNavResize: PropTypes.func,
   };
 
+  static childContextTypes = {
+    showModal: PropTypes.func,
+    addFlag: PropTypes.func,
+  }
+
+  getChildContext() {
+    return {
+      showModal: this.showModal,
+      addFlag: this.addFlag,
+    };
+  }
+
+  showModal = () => {
+    this.setState({ isModalOpen: true });
+  }
+
+  hideModal = () => {
+    this.setState({ isModalOpen: false });
+  }
+
+  addFlag = () => {
+    this.setState({ flags: [{ id: Date.now() }].concat(this.state.flags) });
+  }
+
+  onFlagDismissed = (dismissedFlagId) => {
+    this.setState({
+      flags: this.state.flags.filter(flag => flag.id !== dismissedFlagId),
+    })
+  }
+
   render() {
     return (
-      <Page
-        navigationWidth={this.context.navOpenState.width}
-        navigation={
-          <Nav
-            isOpen={this.context.navOpenState.isOpen}
-            width={this.context.navOpenState.width}
-            onResize={this.props.onNavResize}
-            containerHeaderComponent={() => (
-              <AkContainerTitle
-                href="#foo"
-                icon={
-                  <img alt="nucleus" src={nucleusImage} />
-                }
-                text="AtlasKit"
-              />
-            )}
-            globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
-            globalSearchIcon={<SearchIcon label="Search icon" />}
-            hasBlanket
-            drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
-            globalAccountItem={AccountDropdownMenu}
-            globalCreateIcon={<CreateIcon label="Create icon" />}
-            globalHelpItem={HelpDropdownMenu}
-            isSearchDrawerOpen={this.state.isSearchDrawerOpen}
-            onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
-            onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
-            searchDrawerContent={
-              <SearchDrawer
-                onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
-                onSearchInputRef={(ref) => {
-                  this.searchInputRef = ref;
-                }}
-              />
-            }
-            isCreateDrawerOpen={this.state.isCreateDrawerOpen}
-            onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
-            onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
-            createDrawerContent={
-              <CreateDrawer
-                onItemClicked={() => this.setState({ isCreateDrawerOpen: false })}
-              />
-            }
-          >
+      <div>
+        <Page
+          navigationWidth={this.context.navOpenState.width}
+          navigation={
+            <Nav
+              isOpen={this.context.navOpenState.isOpen}
+              width={this.context.navOpenState.width}
+              onResize={this.props.onNavResize}
+              containerHeaderComponent={() => (
+                <AkContainerTitle
+                  href="#foo"
+                  icon={
+                    <img alt="nucleus" src={nucleusImage} />
+                  }
+                  text="AtlasKit"
+                />
+              )}
+              globalPrimaryIcon={<AtlassianIcon label="Atlassian icon" size="medium" />}
+              globalSearchIcon={<SearchIcon label="Search icon" />}
+              hasBlanket
+              drawerBackIcon={<ArrowleftIcon label="Back icon" size="medium" />}
+              globalAccountItem={AccountDropdownMenu}
+              globalCreateIcon={<CreateIcon label="Create icon" />}
+              globalHelpItem={HelpDropdownMenu}
+              isSearchDrawerOpen={this.state.isSearchDrawerOpen}
+              onSearchDrawerOpen={() => (this.setState({ isSearchDrawerOpen: true }))}
+              onSearchDrawerClose={() => (this.setState({ isSearchDrawerOpen: false }))}
+              searchDrawerContent={
+                <SearchDrawer
+                  onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
+                  onSearchInputRef={(ref) => {
+                    this.searchInputRef = ref;
+                  }}
+                />
+              }
+              isCreateDrawerOpen={this.state.isCreateDrawerOpen}
+              onCreateDrawerOpen={() => (this.setState({ isCreateDrawerOpen: true }))}
+              onCreateDrawerClose={() => (this.setState({ isCreateDrawerOpen: false }))}
+              createDrawerContent={
+                <CreateDrawer
+                  onItemClicked={() => this.setState({ isCreateDrawerOpen: false })}
+                />
+              }
+            >
+              {
+                navLinks.map(link => {
+                  const [url, title, Icon] = link;
+                  return (
+                    <Link key={url} to={url}>
+                      <AkContainerItem
+                        icon={<Icon label={title} />}
+                        text={title}
+                        isSelected={this.context.router.isActive(url, true)}
+                      />
+                    </Link>
+                  );
+                })
+              }
+            </Nav>
+          }
+        >
+          {this.props.children}
+        </Page>
+        <div>
+          <FlagGroup onDismissed={this.onFlagDismissed}>
             {
-              navLinks.map(link => {
-                const [url, title, Icon] = link;
-                return (
-                  <Link key={url} to={url}>
-                    <AkContainerItem
-                      icon={<Icon label={title} />}
-                      text={title}
-                      isSelected={this.context.router.isActive(url, true)}
-                    />
-                  </Link>
-                );
-              })
+              this.state.flags.map(flag => (
+                <Flag
+                  id={flag.id}
+                  key={flag.id}
+                  title="Flag goes here"
+                  description="Flag description goes here"
+                />
+              ))
             }
-          </Nav>
-        }
-      >
-        {this.props.children}
-      </Page>
+          </FlagGroup>
+          <Modal
+            header={
+              <h2>Candy bar</h2>
+            }
+            footer={
+              <Button appearance="subtle" onClick={this.hideModal}>Exit candy bar</Button>
+            }
+            isOpen={this.state.isModalOpen}
+            onDialogDismissed={this.hideModal}
+          >
+            <p style={{ textAlign: 'center' }}>
+              <img src="http://i.giphy.com/yidUztgRB2w2gtDwL6.gif" alt="Moar cupcakes" />
+            </p>
+          </Modal>
+        </div>
+      </div>
     );
   }
 }
