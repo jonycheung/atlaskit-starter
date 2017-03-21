@@ -5,13 +5,11 @@ pipelines:
     master:
       - step:
           script:
-            - npm install -g yarn
             - yarn
             - npm run build
             - npm run surge
   default:
     - step:
         script:
-          - npm install -g yarn
           - yarn
           - npm run build
