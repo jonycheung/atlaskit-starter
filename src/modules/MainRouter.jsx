@@ -11,7 +11,7 @@ export default class MainRouter extends PureComponent {
     this.state = {
       navOpenState: {
         isOpen: true,
-        width: 284,
+        width: 304,
       }
     }
   }
