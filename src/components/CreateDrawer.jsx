@@ -1,4 +1,4 @@
-import React, {PureComponent} from "react";
+import React, {PropTypes, PureComponent} from "react";
 
 import {AkContainerItemGroup, AkDrawerItem} from "@atlaskit/navigation";
 
@@ -29,6 +29,9 @@ const createItems = [
 ];
 
 export default class CreateDrawer extends PureComponent {
+  static PropTypes = {
+    onItemClicked: PropTypes.func,
+  };
 
   render() {
     return (

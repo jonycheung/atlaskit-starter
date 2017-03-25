@@ -1,4 +1,4 @@
-import React, {PureComponent} from "react";
+import React, {PropTypes, PureComponent} from "react";
 import SearchResults from "./SearchResults";
 
 const items = [
@@ -11,6 +11,11 @@ const items = [
 ];
 
 export default class SearchDrawer extends PureComponent {
+  static PropTypes = {
+    onResultClicked: PropTypes.func,
+    onSearchInputRef: PropTypes.func,
+  };
+
   state = {
     searchString: '',
     results: items,
