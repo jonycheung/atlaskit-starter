@@ -30,7 +30,7 @@ export default class StarterNavigation extends PureComponent {
       ['/pull-requests', 'Pull requests', PullRequestsIcon],
       ['/settings', 'Settings', GearIcon],
     ]
-  }
+  };
 
   static contextTypes = {
     navOpenState: PropTypes.object,
@@ -39,7 +39,11 @@ export default class StarterNavigation extends PureComponent {
 
   openDrawer = (openDrawer) => {
     this.setState({ openDrawer });
-  }
+  };
+
+  shouldComponentUpdate(nextProps, nextContext) {
+    return true;
+  };
 
   render() {
     const backIcon = <ArrowleftIcon label="Back icon" size="medium" />;
@@ -60,6 +64,7 @@ export default class StarterNavigation extends PureComponent {
           />
         )}
         globalPrimaryIcon={globalPrimaryIcon}
+        globalPrimaryItemHref="/"
         globalSearchIcon={<SearchIcon label="Search icon" />}
         hasBlanket
         drawers={[
@@ -71,7 +76,7 @@ export default class StarterNavigation extends PureComponent {
             primaryIcon={globalPrimaryIcon}
           >
             <SearchDrawer
-              onResultClicked={() => this.setState({ isSearchDrawerOpen: false })}
+              onResultClicked={() => this.openDrawer(null)}
               onSearchInputRef={(ref) => {
                 this.searchInputRef = ref;
               }}
@@ -84,7 +89,7 @@ export default class StarterNavigation extends PureComponent {
             onBackButton={() => this.openDrawer(null)}
           >
             <CreateDrawer
-              onItemClicked={() => this.setState({ isCreateDrawerOpen: false })}
+              onItemClicked={() => this.openDrawer(null)}
             />
           </AkCreateDrawer>
         ]}
@@ -106,7 +111,7 @@ export default class StarterNavigation extends PureComponent {
                 />
               </Link>
             );
-          })
+          }, this)
         }
       </Nav>
     );

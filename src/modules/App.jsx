@@ -11,7 +11,6 @@ export default class App extends PureComponent {
   state = {
     flags: [],
     isModalOpen: false,
-    openDrawer: null,
   };
 
   static contextTypes = {
