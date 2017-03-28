@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@atlaskit/avatar@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@atlaskit/avatar/-/avatar-2.1.1.tgz#36de0125faa21926a32a0c573126ae866df7e347"
+"@atlaskit/avatar@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@atlaskit/avatar/-/avatar-2.1.4.tgz#22543981fe7f716450fd44d496340a0fc4aabc8e"
   dependencies:
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
@@ -26,23 +26,23 @@
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-"@atlaskit/button@^1.0.0", "@atlaskit/button@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@atlaskit/button/-/button-1.0.12.tgz#23efcaa2bb55f821e39a0871d71340f9def3dfa3"
+"@atlaskit/button@^1.0.0", "@atlaskit/button@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@atlaskit/button/-/button-1.0.15.tgz#450614abe0ff45c737d543969044ed5ca712b26a"
   dependencies:
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-"@atlaskit/css-reset@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@atlaskit/css-reset/-/css-reset-1.0.2.tgz#a2dde317fb02844fdb73738176d457355aa9c7b0"
+"@atlaskit/css-reset@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@atlaskit/css-reset/-/css-reset-1.0.5.tgz#db8760c72a27953fb9965a4508800527b010c620"
   dependencies:
     "@atlaskit/util-shared-styles" "^1.0.0"
 
-"@atlaskit/dropdown-menu@^1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@atlaskit/dropdown-menu/-/dropdown-menu-1.1.8.tgz#e0ce924ab36c48c6f6a38d55eb6afdbcfd5993f8"
+"@atlaskit/dropdown-menu@^1.1.12":
+  version "1.1.12"
+  resolved "https://registry.yarnpkg.com/@atlaskit/dropdown-menu/-/dropdown-menu-1.1.12.tgz#fd0df3cd474b380de4a46ca9d9128cad87614fef"
   dependencies:
     uid "0.0.2"
     "@atlaskit/button" "^1.0.0"
@@ -62,9 +62,9 @@
     classnames "^2.2.5"
     keycode "^2.1.7"
 
-"@atlaskit/flag@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@atlaskit/flag/-/flag-1.0.5.tgz#359ec13a4cbf3714dc04c5b47597bc71358e35ed"
+"@atlaskit/flag@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@atlaskit/flag/-/flag-1.0.9.tgz#7fa3ecc7202e18dd07e5e7bf7efe4986865b04b3"
   dependencies:
     "@atlaskit/button" "^1.0.0"
     "@atlaskit/icon" "^2.5.0"
@@ -97,6 +97,14 @@
     classnames "^2.2.5"
     create-error "^0.3.1"
 
+"@atlaskit/icon@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-4.0.0.tgz#6421f725637275e37b34c63f0b4505e93cf4bbfd"
+  dependencies:
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+    create-error "^0.3.1"
+
 "@atlaskit/layer@^1.0.0":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@atlaskit/layer/-/layer-1.1.2.tgz#1a3d4ee0fdfd5bfa5f6113782adc19261e472963"
@@ -105,29 +113,30 @@
     babel-runtime "^6.11.6"
     popper.js "^1.0.1"
 
-"@atlaskit/modal-dialog@^1.0.0", "@atlaskit/modal-dialog@^1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@atlaskit/modal-dialog/-/modal-dialog-1.2.9.tgz#400a7ece17368a45e615aab9b50825cc51351608"
+"@atlaskit/modal-dialog@^1.0.0", "@atlaskit/modal-dialog@^1.2.12":
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/@atlaskit/modal-dialog/-/modal-dialog-1.2.12.tgz#0600075f90a6aa86e1599dcf7299315d9eabe961"
   dependencies:
     "@atlaskit/blanket" "^1.0.0"
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
 
-"@atlaskit/navigation@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@atlaskit/navigation/-/navigation-6.0.0.tgz#c392fc874961eedfba734c4b53ae60d601c1d026"
+"@atlaskit/navigation@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/navigation/-/navigation-8.0.0.tgz#81151d5e46a0b424c556a1a10ea60bb3b7a4db2c"
   dependencies:
     "@atlaskit/blanket" "^1.2.0"
     "@atlaskit/util-common" "^1.0.0"
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
     classnames "^2.2.5"
+    invariant "^2.2.2"
     keycode "^2.1.2"
 
-"@atlaskit/page@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@atlaskit/page/-/page-3.0.1.tgz#37f889c0fa1d15a50f8680cbf436d6145457cc42"
+"@atlaskit/page@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@atlaskit/page/-/page-3.0.4.tgz#aad24cd384690392e0c1c59339a94924c7d4ebd2"
   dependencies:
     "@atlaskit/util-shared-styles" "^1.0.0"
     babel-runtime "^6.11.6"
@@ -140,9 +149,9 @@
     create-error "^0.3.1"
     keycode "^2.1.2"
 
-"@atlaskit/util-shared-styles@^1.0.0", "@atlaskit/util-shared-styles@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@atlaskit/util-shared-styles/-/util-shared-styles-1.0.3.tgz#bb17e3c29ab97bb9c3bc9e1bb14728806811367b"
+"@atlaskit/util-shared-styles@^1.0.0", "@atlaskit/util-shared-styles@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/util-shared-styles/-/util-shared-styles-1.2.1.tgz#0813620fbe0f0352157d945b978853a46e3b0dc9"
   dependencies:
     babel-runtime "^6.11.6"
 
@@ -1001,19 +1010,12 @@ babel-runtime@6.22.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.0.0, babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0:
+babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
-
-babel-runtime@^6.11.6:
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.18.0.tgz#0f4177ffd98492ef13b9f823e9994a02584c9078"
-  dependencies:
-    core-js "^2.4.0"
-    regenerator-runtime "^0.9.5"
 
 babel-template@^6.14.0, babel-template@^6.15.0, babel-template@^6.16.0, babel-template@^6.22.0, babel-template@^6.23.0, babel-template@^6.8.0:
   version "6.23.0"
@@ -4795,10 +4797,6 @@ regenerate@^1.2.1:
 regenerator-runtime@^0.10.0:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.3.tgz#8c4367a904b51ea62a908ac310bf99ff90a82a3e"
-
-regenerator-runtime@^0.9.5:
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.9.6.tgz#d33eb95d0d2001a4be39659707c51b0cb71ce029"
 
 regenerator-transform@0.9.8:
   version "0.9.8"
