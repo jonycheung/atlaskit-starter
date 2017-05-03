@@ -15,7 +15,7 @@ npm run start
 
 This repo ships with a couple of AtlasKit components such as `@atlaskit/navigation`.
 
-You can add other components (listed at [http://go/ak](http://go/ak)) to your project:
+You can add other components (listed at [http://go.atlassian.com/ak](http://go.atlassian.com/ak)) to your project:
 
 ```bash
 yarn add @atlaskit/button
