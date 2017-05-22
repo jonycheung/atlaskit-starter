@@ -1,9 +1,10 @@
-import React, { PureComponent, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import { Link } from 'react-router';
 import Nav, {
-  AkContainerItem,
   AkContainerTitle,
   AkCreateDrawer,
+  AkNavigationItem,
   AkSearchDrawer,
 } from '@atlaskit/navigation';
 
@@ -19,9 +20,9 @@ import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
 
 import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
-import ArrowleftIcon from '@atlaskit/icon/glyph/arrowleft';
+import ArrowleftIcon from '@atlaskit/icon/glyph/arrow-left';
 
-import nucleusImage from '../../public/nucleus.png';
+import nucleusImage from '../images/nucleus.png';
 
 export default class StarterNavigation extends PureComponent {
   state = {
@@ -47,7 +48,7 @@ export default class StarterNavigation extends PureComponent {
 
   render() {
     const backIcon = <ArrowleftIcon label="Back icon" size="medium" />;
-    const globalPrimaryIcon = <AtlassianIcon label="Atlassian icon" size="medium" />;
+    const globalPrimaryIcon = <AtlassianIcon label="Atlassian icon" size="xlarge" />;
 
     return (
       <Nav
@@ -104,8 +105,8 @@ export default class StarterNavigation extends PureComponent {
             const [url, title, Icon] = link;
             return (
               <Link key={url} to={url}>
-                <AkContainerItem
-                  icon={<Icon label={title} />}
+                <AkNavigationItem
+                  icon={<Icon label={title} size="medium" />}
                   text={title}
                   isSelected={this.context.router.isActive(url, true)}
                 />

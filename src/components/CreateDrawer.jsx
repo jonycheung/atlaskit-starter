@@ -1,6 +1,7 @@
-import React, {PropTypes, PureComponent} from "react";
+import PropTypes from 'prop-types';
+import React, { PureComponent } from "react";
 
-import {AkContainerItemGroup, AkDrawerItem} from "@atlaskit/navigation";
+import { AkNavigationItemGroup, AkNavigationItem } from "@atlaskit/navigation";
 
 import BitbucketBranchesIcon from "@atlaskit/icon/glyph/bitbucket/branches";
 import PageIcon from "@atlaskit/icon/glyph/page";
@@ -39,12 +40,12 @@ export default class CreateDrawer extends PureComponent {
         {
           createItems.map(itemGroup => {
             return (
-              <AkContainerItemGroup key={itemGroup.title} title={itemGroup.title}>
+              <AkNavigationItemGroup key={itemGroup.title} title={itemGroup.title}>
                 {
                   itemGroup.items.map(item => {
                     const [url, text, label, Icon] = item;
                     return (
-                      <AkDrawerItem
+                      <AkNavigationItem
                         key={url}
                         href={url}
                         icon={<Icon label={label}/>}
@@ -54,11 +55,11 @@ export default class CreateDrawer extends PureComponent {
                     );
                   })
                 }
-              </AkContainerItemGroup>
+              </AkNavigationItemGroup>
             )
           })
         }
       </div>
     )
   };
-};
+}

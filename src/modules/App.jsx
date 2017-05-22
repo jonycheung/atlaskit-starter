@@ -1,4 +1,5 @@
-import React, { PureComponent, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import Button from '@atlaskit/button';
 import Flag, { FlagGroup } from '@atlaskit/flag';
 import Modal from '@atlaskit/modal-dialog';
@@ -58,9 +59,7 @@ export default class App extends PureComponent {
       <div>
         <Page
           navigationWidth={this.context.navOpenState.width}
-          navigation={
-            <StarterNavigation />
-          }
+          navigation={<StarterNavigation />}
         >
           {this.props.children}
         </Page>

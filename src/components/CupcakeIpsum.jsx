@@ -1,4 +1,5 @@
-import React, { PureComponent, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 
 const cupcakes = [
   'Apple pie chocolate jelly beans macaroon soufflé lollipop sugar plum tiramisu gingerbread. Tiramisu jelly beans tart. Cake ice cream lollipop pudding dragée jujubes. Sweet liquorice brownie icing gummi bears soufflé cotton candy danish. Carrot cake marshmallow toffee tart. Oat cake topping gummies dragée sugar plum candy canes marshmallow jelly beans. Cotton candy apple pie cupcake cookie gummies wafer chocolate cookie sugar plum. Dragée fruitcake sweet sesame snaps jelly. Candy sweet muffin biscuit chupa chups. Oat cake ice cream chocolate bear claw marzipan chocolate bar soufflé gummies. Pastry biscuit icing. Pastry croissant apple pie jelly beans sesame snaps cotton candy donut pie. Dragée sweet roll chupa chups jelly-o.', // eslint-disable-line

@@ -1,4 +1,5 @@
-import React, { PropTypes, PureComponent } from 'react';
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import Button from '@atlaskit/button';
 import CupcakeIpsum from '../components/CupcakeIpsum';
 import ContentWrapper from '../components/ContentWrapper';
