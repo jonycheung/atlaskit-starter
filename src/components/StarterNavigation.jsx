@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Link } from 'react-router';
 import Nav, {
   AkContainerTitle,
@@ -24,7 +24,7 @@ import ArrowleftIcon from '@atlaskit/icon/glyph/arrow-left';
 
 import nucleusImage from '../images/nucleus.png';
 
-export default class StarterNavigation extends PureComponent {
+export default class StarterNavigation extends React.Component {
   state = {
     navLinks: [
       ['/', 'Home', DashboardIcon],
@@ -88,6 +88,7 @@ export default class StarterNavigation extends PureComponent {
             isOpen={this.state.openDrawer === 'create'}
             key="create"
             onBackButton={() => this.openDrawer(null)}
+            primaryIcon={globalPrimaryIcon}
           >
             <CreateDrawer
               onItemClicked={() => this.openDrawer(null)}
