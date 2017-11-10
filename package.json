@@ -25,8 +25,6 @@
     "@atlaskit/navigation": "^26.5.1",
     "@atlaskit/page": "^5.0.3",
     "@atlaskit/util-shared-styles": "^2.10.4",
-    "global": "^4.3.2",
-    "history": "^4.7.2",
     "prop-types": "^15.6.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
