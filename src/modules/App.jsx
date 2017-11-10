@@ -76,20 +76,19 @@ export default class App extends PureComponent {
               ))
             }
           </FlagGroup>
-          <Modal
-            header={
-              <h2>Candy bar</h2>
-            }
-            footer={
-              <Button appearance="subtle" onClick={this.hideModal}>Exit candy bar</Button>
-            }
-            isOpen={this.state.isModalOpen}
-            onDialogDismissed={this.hideModal}
-          >
-            <p style={{ textAlign: 'center' }}>
-              <img src="http://i.giphy.com/yidUztgRB2w2gtDwL6.gif" alt="Moar cupcakes" />
-            </p>
-          </Modal>
+          {
+            this.state.isModalOpen && (
+              <Modal
+                heading="Candy bar"
+                actions={[{ text: 'Exit candy bar', onClick: this.hideModal }]}
+                onClose={this.hideModal}
+              >
+                <p style={{ textAlign: 'center' }}>
+                  <img src="http://i.giphy.com/yidUztgRB2w2gtDwL6.gif" alt="Moar cupcakes" />
+                </p>
+              </Modal>
+            )
+          }
         </div>
       </div>
     );
