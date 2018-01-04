@@ -61,7 +61,7 @@ export default class StarterNavigation extends React.Component {
             icon={
               <img alt="nucleus" src={nucleusImage} />
             }
-            text="AtlasKit"
+            text="Atlaskit"
           />
         )}
         globalPrimaryIcon={globalPrimaryIcon}
