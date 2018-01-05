@@ -3,7 +3,7 @@ import React, { PureComponent } from "react";
 import { Link } from "react-router";
 
 export default class SearchResults extends PureComponent {
-  static PropTypes = {
+  static propTypes = {
     matchingResults: PropTypes.arrayOf(PropTypes.object),
     onResultClicked: PropTypes.func,
   };
