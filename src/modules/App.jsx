@@ -18,7 +18,7 @@ export default class App extends PureComponent {
     router: PropTypes.object,
   };
 
-  static PropTypes = {
+  static propTypes = {
     navOpenState: PropTypes.object,
     onNavResize: PropTypes.func,
   };

@@ -12,7 +12,7 @@ const items = [
 ];
 
 export default class SearchDrawer extends PureComponent {
-  static PropTypes = {
+  static propTypes = {
     onResultClicked: PropTypes.func,
     onSearchInputRef: PropTypes.func,
   };

@@ -23,14 +23,12 @@ export default class MainRouter extends PureComponent {
     };
   }
 
-  appWithPersistentNav = () => {
-    return (props) => (
-      <App
-        onNavResize={this.onNavResize}
-        {...props}
-      />
-    );
-  }
+  appWithPersistentNav = () => (props) => (
+    <App
+      onNavResize={this.onNavResize}
+      {...props}
+    />
+  )
 
   onNavResize = (navOpenState) => {
     this.setState({

@@ -30,7 +30,7 @@ const createItems = [
 ];
 
 export default class CreateDrawer extends PureComponent {
-  static PropTypes = {
+  static propTypes = {
     onItemClicked: PropTypes.func,
   };
 
