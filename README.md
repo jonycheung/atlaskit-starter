@@ -1,6 +1,6 @@
-# AtlasKit starter
+# Atlaskit starter
 
-This is a basic app which includes some AtlasKit components, built on top of [create-react-app](https://github.com/facebookincubator/create-react-app). You can use this as a starting point for your next ADG3-themed project.
+This is a basic app which includes some Atlaskit components, built on top of [create-react-app](https://github.com/facebookincubator/create-react-app). You can use this as a starting point for your next ADG3-themed project.
 
 A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-starter.surge.sh/)
 
@@ -11,9 +11,9 @@ yarn # if you don't have yarn, install with: npm install -g yarn
 npm run start
 ```
 
-## Using more AtlasKit components
+## Using more Atlaskit components
 
-This repo ships with a couple of AtlasKit components such as `@atlaskit/navigation`.
+This repo ships with a couple of Atlaskit components such as `@atlaskit/navigation`.
 
 You can add other components (listed at [http://go.atlassian.com/ak](http://go.atlassian.com/ak)) to your project:
 
@@ -37,6 +37,6 @@ render() {
 
 ## Want some help?
 
-This repo is helpful for people using AtlasKit + React for the first time. If you've had a look and have more questions, please contact the team in the "AtlasKit" HipChat room.
+This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please contact the team in the "Atlaskit" HipChat room.
 
 ![Screenshot](https://i.imgur.com/p4N266G.gif)
