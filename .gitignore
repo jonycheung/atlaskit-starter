@@ -1,7 +1,16 @@
+# dependency cache
 node_modules
+
+# build
 static/bundle.js
+build/
+
+# logs
 npm-debug.log
+
+# editor config
 .idea
 *.iml
-build/
+
+# OS files
 *.DS_Store
