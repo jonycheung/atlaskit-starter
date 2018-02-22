@@ -22,7 +22,7 @@ import AccountDropdownMenu from '../components/AccountDropdownMenu';
 import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
 import ArrowleftIcon from '@atlaskit/icon/glyph/arrow-left';
 
-import nucleusImage from '../images/nucleus.png';
+import atlaskitLogo from '../images/atlaskit.png';
 
 export default class StarterNavigation extends React.Component {
   state = {
@@ -57,9 +57,9 @@ export default class StarterNavigation extends React.Component {
         onResize={this.props.onNavResize}
         containerHeaderComponent={() => (
           <AkContainerTitle
-            href="#foo"
+            href="https://atlaskit.atlassian.com/"
             icon={
-              <img alt="nucleus" src={nucleusImage} />
+              <img alt="atlaskit logo" src={atlaskitLogo} />
             }
             text="Atlaskit"
           />
