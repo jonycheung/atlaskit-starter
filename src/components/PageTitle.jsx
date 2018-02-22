@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { akGridSize } from '@atlaskit/util-shared-styles';
+import { gridSize } from '@atlaskit/theme';
 
 const PageTitle = styled.h1`
-  margin-bottom: calc(${akGridSize} * 2);
+  margin-bottom: calc(${gridSize()}px * 2);
 `;
 
 export default PageTitle;

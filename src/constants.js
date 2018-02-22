@@ -1,4 +1,4 @@
-import { akGridSize } from '@atlaskit/util-shared-styles';
-const gridSizeInt = parseInt(akGridSize, 10);
+import { gridSize } from '@atlaskit/theme';
+const gridSizeInt = parseInt(gridSize(), 10);
 
 export { gridSizeInt };
