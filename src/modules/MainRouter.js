@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { Router, Route, browserHistory } from 'react-router';
-import App from './App.jsx';
-import HomePage from '../pages/HomePage.jsx';
-import SettingsPage from '../pages/SettingsPage.jsx';
-import PullRequestsPage from '../pages/PullRequestsPage.jsx';
+import App from './App';
+import HomePage from '../pages/HomePage';
+import SettingsPage from '../pages/SettingsPage';
+import PullRequestsPage from '../pages/PullRequestsPage';
 
 export default class MainRouter extends PureComponent {
   constructor() {

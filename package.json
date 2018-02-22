@@ -2,7 +2,6 @@
   "name": "atlaskit-starter",
   "version": "1.0.0",
   "description": "Get your ADG3 on with this sample project using Atlaskit React components",
-  "main": "src/entry.jsx",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
