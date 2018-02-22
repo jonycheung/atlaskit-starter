@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { Router, Route, browserHistory } from 'react-router';
 import App from './App';
 import HomePage from '../pages/HomePage';
 import SettingsPage from '../pages/SettingsPage';
 import PullRequestsPage from '../pages/PullRequestsPage';
 
-export default class MainRouter extends PureComponent {
+export default class MainRouter extends Component {
   constructor() {
     super();
     this.state = {

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router";
 
-export default class SearchResults extends PureComponent {
+export default class SearchResults extends Component {
   static propTypes = {
     matchingResults: PropTypes.arrayOf(PropTypes.object),
     onResultClicked: PropTypes.func,

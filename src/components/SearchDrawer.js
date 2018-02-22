@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import SearchResults from "./SearchResults";
 
 const items = [
@@ -11,7 +11,7 @@ const items = [
   { name: 'Pages', link: '/#pages', description: 'Confluence pages you have made.' },
 ];
 
-export default class SearchDrawer extends PureComponent {
+export default class SearchDrawer extends Component {
   static propTypes = {
     onResultClicked: PropTypes.func,
     onSearchInputRef: PropTypes.func,

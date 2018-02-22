@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
 const cupcakes = [
   'Apple pie chocolate jelly beans macaroon soufflé lollipop sugar plum tiramisu gingerbread. Tiramisu jelly beans tart. Cake ice cream lollipop pudding dragée jujubes. Sweet liquorice brownie icing gummi bears soufflé cotton candy danish. Carrot cake marshmallow toffee tart. Oat cake topping gummies dragée sugar plum candy canes marshmallow jelly beans. Cotton candy apple pie cupcake cookie gummies wafer chocolate cookie sugar plum. Dragée fruitcake sweet sesame snaps jelly. Candy sweet muffin biscuit chupa chups. Oat cake ice cream chocolate bear claw marzipan chocolate bar soufflé gummies. Pastry biscuit icing. Pastry croissant apple pie jelly beans sesame snaps cotton candy donut pie. Dragée sweet roll chupa chups jelly-o.', // eslint-disable-line
@@ -9,7 +9,7 @@ const cupcakes = [
   'Cotton candy gummi bears chocolate cake tart chupa chups cotton candy toffee fruitcake sesame snaps. Danish tootsie roll jelly-o bear claw. Sugar plum candy icing sweet candy canes lemon drops. Macaroon cookie gingerbread cheesecake dragée. Lemon drops chocolate bar donut jelly beans pudding gummies tootsie roll chocolate bar. Cookie brownie jujubes wafer chupa chups halvah jelly apple pie sesame snaps. Cake candy pie lemon drops sugar plum liquorice chupa chups carrot cake. Tiramisu chocolate sweet topping. Liquorice candy canes gummies tootsie roll jujubes cake. Tiramisu macaroon danish fruitcake oat cake toffee cupcake. Jelly sugar plum macaroon candy dessert jelly beans bear claw wafer. Macaroon ice cream croissant jujubes sweet roll.', // eslint-disable-line
 ];
 
-export default class CupcakeIpsum extends PureComponent {
+export default class CupcakeIpsum extends Component {
   static propTypes = {
     paragraphs: PropTypes.number,
   };

@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Button from '@atlaskit/button';
 import CupcakeIpsum from '../components/CupcakeIpsum';
 import ContentWrapper from '../components/ContentWrapper';
 import PageTitle from '../components/PageTitle';
 import InlineEdit from '@atlaskit/inline-edit';
 
-export default class HomePage extends PureComponent {
+export default class HomePage extends Component {
   static contextTypes = {
     showModal: PropTypes.func,
     addFlag: PropTypes.func,
