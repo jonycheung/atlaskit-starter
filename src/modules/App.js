@@ -69,8 +69,8 @@ export default class App extends Component {
                 <Flag
                   id={flag.id}
                   key={flag.id}
-                  title="Flag goes here"
-                  description="Flag description goes here"
+                  title="Flag Title"
+                  description="Flag description"
                 />
               ))
             }

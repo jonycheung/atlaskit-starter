@@ -30,7 +30,6 @@ export default class SearchDrawer extends Component {
 
   searchResults = () => {
     const {results, searchString} = this.state;
-    if (!searchString.length) return null;
 
     const matchingResults = results.filter(
       c => (

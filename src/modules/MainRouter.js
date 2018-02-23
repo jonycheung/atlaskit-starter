@@ -4,7 +4,6 @@ import { Router, Route, browserHistory } from 'react-router';
 import App from './App';
 import HomePage from '../pages/HomePage';
 import SettingsPage from '../pages/SettingsPage';
-import PullRequestsPage from '../pages/PullRequestsPage';
 
 export default class MainRouter extends Component {
   constructor() {
@@ -41,7 +40,6 @@ export default class MainRouter extends Component {
       <Router history={browserHistory}>
         <Route component={this.appWithPersistentNav()}>
           <Route path="/" component={HomePage} />
-          <Route path="/pull-requests" component={PullRequestsPage} />
           <Route path="/settings" component={SettingsPage} />
         </Route>
       </Router>
