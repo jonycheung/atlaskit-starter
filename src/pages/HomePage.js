@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Button, { ButtonGroup } from '@atlaskit/button';
-import CupcakeIpsum from '../components/CupcakeIpsum';
+import MainSection from '../components/MainSection';
 import ContentWrapper from '../components/ContentWrapper';
 import PageTitle from '../components/PageTitle';
 
@@ -18,7 +18,7 @@ export default class HomePage extends Component {
     return (
       <ContentWrapper>
         <PageTitle>Home</PageTitle>
-        <CupcakeIpsum paragraphs={5} />
+        <MainSection />
         <ButtonGroup>
           <Button
             appearance="primary"
