@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Flag, { FlagGroup } from '@atlaskit/flag';
 import Modal from '@atlaskit/modal-dialog';
 import Page from '@atlaskit/page';
@@ -7,7 +7,7 @@ import '@atlaskit/css-reset';
 
 import StarterNavigation from '../components/StarterNavigation';
 
-export default class App extends PureComponent {
+export default class App extends Component {
   state = {
     flags: [],
     isModalOpen: false,
@@ -69,8 +69,8 @@ export default class App extends PureComponent {
                 <Flag
                   id={flag.id}
                   key={flag.id}
-                  title="Flag goes here"
-                  description="Flag description goes here"
+                  title="Flag Title"
+                  description="Flag description"
                 />
               ))
             }

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, GridColumn } from '@atlaskit/page';
-import { akGridSizeUnitless } from '@atlaskit/util-shared-styles';
+import { gridSize } from '@atlaskit/theme';
 
 const Padding = styled.div`
-  margin: ${akGridSizeUnitless * 4}px ${akGridSizeUnitless * 8}px;
-  padding-bottom: ${akGridSizeUnitless * 3}px;
+  margin: ${gridSize() * 4}px ${gridSize() * 8}px;
+  padding-bottom: ${gridSize() * 3}px;
 `;
 
 export default ({ children }) => (

@@ -2,7 +2,6 @@
   "name": "atlaskit-starter",
   "version": "1.0.0",
   "description": "Get your ADG3 on with this sample project using Atlaskit React components",
-  "main": "src/entry.jsx",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -14,17 +13,17 @@
   "author": "Atlassian",
   "license": "ISC",
   "dependencies": {
-    "@atlaskit/avatar": "^8.3.11",
-    "@atlaskit/button": "^6.2.0",
-    "@atlaskit/css-reset": "^1.1.7",
-    "@atlaskit/dropdown-menu": "^3.11.4",
-    "@atlaskit/flag": "^6.1.9",
-    "@atlaskit/icon": "^10.6.0",
-    "@atlaskit/inline-edit": "^4.5.6",
-    "@atlaskit/modal-dialog": "^3.2.6",
-    "@atlaskit/navigation": "^27.0.4",
-    "@atlaskit/page": "^5.0.5",
-    "@atlaskit/util-shared-styles": "^2.10.6",
+    "@atlaskit/avatar": "^9.0.4",
+    "@atlaskit/button": "^6.4.2",
+    "@atlaskit/css-reset": "^1.2.2",
+    "@atlaskit/dropdown-menu": "^3.11.10",
+    "@atlaskit/flag": "^6.4.6",
+    "@atlaskit/icon": "^10.9.2",
+    "@atlaskit/inline-edit": "^4.5.18",
+    "@atlaskit/modal-dialog": "^3.3.15",
+    "@atlaskit/navigation": "^29.0.2",
+    "@atlaskit/page": "^5.0.14",
+    "@atlaskit/theme": "^2.3.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -32,7 +31,7 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "react-scripts": "^1.0.17",
+    "react-scripts": "^1.1.1",
     "surge": "^0.19.0"
   }
 }

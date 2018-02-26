@@ -7,28 +7,23 @@ import Nav, {
   AkNavigationItem,
   AkSearchDrawer,
 } from '@atlaskit/navigation';
-
 import DashboardIcon from '@atlaskit/icon/glyph/dashboard';
-import PullRequestsIcon from '@atlaskit/icon/glyph/bitbucket/pullrequests';
 import GearIcon from '@atlaskit/icon/glyph/settings';
 import SearchIcon from '@atlaskit/icon/glyph/search';
 import CreateIcon from '@atlaskit/icon/glyph/add';
+import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
+import ArrowleftIcon from '@atlaskit/icon/glyph/arrow-left';
 
 import CreateDrawer from '../components/CreateDrawer';
 import SearchDrawer from '../components/SearchDrawer';
 import HelpDropdownMenu from '../components/HelpDropdownMenu';
 import AccountDropdownMenu from '../components/AccountDropdownMenu';
-
-import AtlassianIcon from '@atlaskit/icon/glyph/atlassian';
-import ArrowleftIcon from '@atlaskit/icon/glyph/arrow-left';
-
-import nucleusImage from '../images/nucleus.png';
+import atlaskitLogo from '../images/atlaskit.png';
 
 export default class StarterNavigation extends React.Component {
   state = {
     navLinks: [
       ['/', 'Home', DashboardIcon],
-      ['/pull-requests', 'Pull requests', PullRequestsIcon],
       ['/settings', 'Settings', GearIcon],
     ]
   };
@@ -57,9 +52,9 @@ export default class StarterNavigation extends React.Component {
         onResize={this.props.onNavResize}
         containerHeaderComponent={() => (
           <AkContainerTitle
-            href="#foo"
+            href="https://atlaskit.atlassian.com/"
             icon={
-              <img alt="nucleus" src={nucleusImage} />
+              <img alt="atlaskit logo" src={atlaskitLogo} />
             }
             text="Atlaskit"
           />

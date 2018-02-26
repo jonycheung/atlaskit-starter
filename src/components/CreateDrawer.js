@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 
 import { AkNavigationItemGroup, AkNavigationItem } from "@atlaskit/navigation";
 
@@ -29,7 +29,7 @@ const createItems = [
   },
 ];
 
-export default class CreateDrawer extends PureComponent {
+export default class CreateDrawer extends Component {
   static propTypes = {
     onItemClicked: PropTypes.func,
   };
