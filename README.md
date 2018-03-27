@@ -37,6 +37,6 @@ render() {
 
 ## Want some help?
 
-This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please contact the team in the "Atlaskit" HipChat room.
+This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please contact the team in the "Atlaskit" Stride room.
 
 ![Screenshot](https://i.imgur.com/p4N266G.gif)
