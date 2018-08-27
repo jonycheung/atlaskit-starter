@@ -13,18 +13,19 @@
   "author": "Atlassian",
   "license": "ISC",
   "dependencies": {
-    "@atlaskit/avatar": "^10.0.7",
-    "@atlaskit/button": "^7.2.5",
-    "@atlaskit/css-reset": "^2.0.2",
-    "@atlaskit/dropdown-menu": "^4.0.5",
-    "@atlaskit/flag": "^7.0.3",
-    "@atlaskit/icon": "^11.3.2",
-    "@atlaskit/inline-edit": "^5.0.2",
-    "@atlaskit/modal-dialog": "^4.0.5",
-    "@atlaskit/navigation": "^31.0.4",
-    "@atlaskit/page": "^6.0.3",
-    "@atlaskit/theme": "^3.2.2",
+    "@atlaskit/avatar": "^14.0.9",
+    "@atlaskit/button": "^9.0.7",
+    "@atlaskit/css-reset": "^3.0.1",
+    "@atlaskit/dropdown-menu": "^6.1.10",
+    "@atlaskit/flag": "^9.0.7",
+    "@atlaskit/icon": "^13.4.0",
+    "@atlaskit/inline-edit": "^7.0.7",
+    "@atlaskit/modal-dialog": "^6.0.10",
+    "@atlaskit/navigation": "^33.1.7",
+    "@atlaskit/page": "^8.0.4",
+    "@atlaskit/theme": "^6.0.1",
     "prop-types": "^15.6.0",
+    "styled-components": "^3.2.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^3.2.0",
@@ -32,6 +33,6 @@
   },
   "devDependencies": {
     "react-scripts": "^1.1.1",
-    "surge": "^0.19.0"
+    "surge": "^0.20.1"
   }
 }
