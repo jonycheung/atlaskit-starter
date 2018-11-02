@@ -7,15 +7,15 @@ A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-
 ## Getting started
 
 ```bash
-yarn # if you don't have yarn, install with: npm install -g yarn
+yarn
 npm run start
 ```
 
 ## Using more Atlaskit components
 
-This repo ships with a couple of Atlaskit components such as `@atlaskit/navigation`.
+This repo ships with some of the Atlaskit components such as `@atlaskit/navigation`.
 
-You can add other components (listed at [http://go.atlassian.com/ak](http://go.atlassian.com/ak)) to your project:
+You can add other components (listed at [https://atlaskit.atlassian.com/](https://atlaskit.atlassian.com/)) to your project. To see an exmaple in order to add button in your project run:
 
 ```bash
 yarn add @atlaskit/button
@@ -37,6 +37,6 @@ render() {
 
 ## Want some help?
 
-This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please contact the team in the "Atlaskit" Stride room.
+This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please open an issue in the repository with clear descriptive title and include as much details as required to answer the questions.
 
 ![Screenshot](https://i.imgur.com/p4N266G.gif)
