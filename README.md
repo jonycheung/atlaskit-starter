@@ -7,7 +7,7 @@ A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-
 ## Getting started
 
 ```bash
-yarn
+npm install
 npm run start
 ```
 
@@ -18,7 +18,7 @@ This repo ships with some of the Atlaskit components such as `@atlaskit/navigati
 You can add other components (listed at [https://atlaskit.atlassian.com/](https://atlaskit.atlassian.com/)) to your project. To see an exmaple in order to add button in your project run:
 
 ```bash
-yarn add @atlaskit/button
+npm install @atlaskit/button --save
 ```
 
 Then in the relevant React component file (e.g. `src/App.jsx`) do the following:
