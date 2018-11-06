@@ -37,6 +37,6 @@ render() {
 
 ## Want some help?
 
-This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please open an issue in the repository with clear descriptive title and include as much details as required to answer the questions.
+This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please open an [issue in the Atlaskit-mk-2 repository](https://bitbucket.org/atlassian/atlaskit-mk-2/issues/new) and mention adg-site as component in the issue.
 
 ![Screenshot](https://i.imgur.com/p4N266G.gif)
