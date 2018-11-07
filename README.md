@@ -42,11 +42,11 @@ render() {
 
 ## Want some help?
 
-This repository is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions please feel to ask them:
+This repository is helpful for people using Atlaskit + React for the first time. If you find a bug or require an improvement, please report it:
 
-If you are an Atlassian employee please use this [link](https://ecosystem.atlassian.net/secure/CreateIssue.jspa?pid=24670) to raise the ticket and mention 'ADG site' as component in the issue.
+If you are an Atlassian employee please use this [link](https://ecosystem.atlassian.net/secure/CreateIssue.jspa?pid=24670) to raise the ticket and mention 'Atlaskit-starter' as component in the issue.
 
-If you are an external contributor please click [here](https://bitbucket.org/atlassian/atlaskit-mk-2/issues/new) to raise an issue in atlaskit-mk-2 repository and mention 'ADG site' as component in the issue.
+If you are an external contributor please click [here](https://bitbucket.org/atlassian/atlaskit-mk-2/issues/new) to raise an issue in atlaskit-mk-2 repository and mention 'Atlaskit-starter' as component in the issue.
 
 ## Demo
 
