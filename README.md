@@ -8,9 +8,12 @@ A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-
 
 Please make sure you have [node](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/en/docs/install) installed in your system.
 
+Please run the following commands to clone the project, install dependencies and start the application.
+
 ```bash
-yarn install
-yarn start
+git clone git@bitbucket.org:atlassian/atlaskit-starter.git   # clone the project
+yarn install  # install dependencies
+yarn start  # start the project
 ```
 
 ## Using more Atlaskit components
