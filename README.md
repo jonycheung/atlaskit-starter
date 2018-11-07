@@ -6,19 +6,21 @@ A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-
 
 ## Getting started
 
+Please make sure you have [node](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/en/docs/install) installed in your system.
+
 ```bash
-npm install
-npm run start
+yarn install
+yarn start
 ```
 
 ## Using more Atlaskit components
 
-This repo ships with some of the Atlaskit components such as `@atlaskit/navigation`.
+This repo ships with some of the Atlaskit components such as `@atlaskit/navigation` and `@atlaskit/avatar`.
 
 You can add other components (listed at [https://atlaskit.atlassian.com/](https://atlaskit.atlassian.com/)) to your project. To see an exmaple in order to add button in your project run:
 
 ```bash
-npm install @atlaskit/button --save
+yarn add @atlaskit/button
 ```
 
 Then in the relevant React component file (e.g. `src/App.jsx`) do the following:
@@ -37,6 +39,6 @@ render() {
 
 ## Want some help?
 
-This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please open an [issue in the Atlaskit-mk-2 repository](https://bitbucket.org/atlassian/atlaskit-mk-2/issues/new) and mention adg-site as component in the issue.
+This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please click [here](https://bitbucket.org/atlassian/atlaskit-mk-2/issues/new) to raise an issue in atlaskit-mk-2 repository and mention adg-site as component in the issue.
 
 ![Screenshot](https://i.imgur.com/p4N266G.gif)
