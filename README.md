@@ -6,16 +6,21 @@ A live demo is available at [http://atlaskit-starter.surge.sh/](http://atlaskit-
 
 ## Getting started
 
+Please make sure you have [node](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com/en/docs/install) installed in your system.
+
+Please run the following commands to clone the project, install dependencies and start the application.
+
 ```bash
-yarn # if you don't have yarn, install with: npm install -g yarn
-npm run start
+git clone git@bitbucket.org:atlassian/atlaskit-starter.git   # clone the project
+yarn install  # install dependencies
+yarn start  # start the project
 ```
 
 ## Using more Atlaskit components
 
-This repo ships with a couple of Atlaskit components such as `@atlaskit/navigation`.
+This repo ships with some of the Atlaskit components such as `@atlaskit/navigation` and `@atlaskit/avatar`.
 
-You can add other components (listed at [http://go.atlassian.com/ak](http://go.atlassian.com/ak)) to your project:
+You can add other components (listed at [https://atlaskit.atlassian.com/](https://atlaskit.atlassian.com/)) to your project. To see an exmaple in order to add button in your project run:
 
 ```bash
 yarn add @atlaskit/button
@@ -37,6 +42,12 @@ render() {
 
 ## Want some help?
 
-This repo is helpful for people using Atlaskit + React for the first time. If you've had a look and have more questions, please contact the team in the "Atlaskit" Stride room.
+This repository is helpful for people using Atlaskit + React for the first time. If you find a bug or require an improvement, please report it:
+
+If you are an Atlassian employee please use this [link](https://ecosystem.atlassian.net/secure/CreateIssue.jspa?pid=24670) to raise the ticket and mention 'Atlaskit-starter' as component in the issue.
+
+If you are an external contributor please click [here](https://bitbucket.org/atlassian/atlaskit-mk-2/issues/new) to raise an issue in atlaskit-mk-2 repository and mention 'Atlaskit-starter' as component in the issue.
+
+## Demo
 
 ![Screenshot](https://i.imgur.com/p4N266G.gif)
