@@ -11,7 +11,7 @@ Please make sure you have [node](https://nodejs.org/en/download/) and [yarn](htt
 Please run the following commands to clone the project, install dependencies and start the application.
 
 ```bash
-git clone git@bitbucket.org:atlassian/atlaskit-starter.git   # clone the project
+git clone https://bitbucket.org/atlassian/atlaskit-starter.git   # clone the project
 yarn install  # install dependencies
 yarn start  # start the project
 ```
