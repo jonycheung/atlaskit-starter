@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from "react";
 
-import { AkNavigationItemGroup, AkNavigationItem } from "@atlaskit/navigation";
+import { DrawerItemGroup, DrawerItem } from "@atlaskit/drawer";
 
 import BitbucketBranchesIcon from "@atlaskit/icon/glyph/bitbucket/branches";
 import PageIcon from "@atlaskit/icon/glyph/page";
@@ -40,22 +40,23 @@ export default class CreateDrawer extends Component {
         {
           createItems.map(itemGroup => {
             return (
-              <AkNavigationItemGroup key={itemGroup.title} title={itemGroup.title}>
+              <DrawerItemGroup key={itemGroup.title} title={itemGroup.title}>
                 {
                   itemGroup.items.map(item => {
                     const [url, text, label, Icon] = item;
                     return (
-                      <AkNavigationItem
+                      <DrawerItem
                         key={url}
                         href={url}
-                        icon={<Icon label={label}/>}
-                        text={text.valueOf()}
+                        elemBefore={<Icon label={label}/>}
                         onClick={this.props.onItemClicked}
-                      />
+                      >
+                        {text.valueOf()}
+                      </DrawerItem>
                     );
                   })
                 }
-              </AkNavigationItemGroup>
+              </DrawerItemGroup>
             )
           })
         }
